@@ -117,29 +117,40 @@ React / Next.js
 
 Authentication
 
-GITHUB
+## GITHUB
 
-<div align="center">
+<p align="center">
+  <img
+    src="https://github-readme-stats.vercel.app/api?username=aarav-pathak&show_icons=true&hide_border=true&include_all_commits=true&rank_icon=github&theme=github_dark"
+    height="170"
+  />
+  <img
+    src="https://github-readme-stats.vercel.app/api/top-langs/?username=aarav-pathak&layout=compact&hide_border=true&langs_count=8&theme=github_dark"
+    height="170"
+  />
+</p>
 
-<a href="https://github.com/aarav-pathak">
-<img src="https://github-readme-stats.vercel.app/api?username=aarav-pathak&show_icons=true&hide_border=true&include_all_commits=true&rank_icon=github&theme=github_dark" height="170" alt="GitHub statistics" />
-</a>
+## ACTIVITY
 
-<a href="https://github.com/aarav-pathak">
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=aarav-pathak&layout=compact&hide_border=true&langs_count=8&theme=github_dark" height="170" alt="Top languages" />
-</a>
+<p align="center">
+  <a href="https://github.com/aarav-pathak">
+    <img
+      src="https://github-readme-activity-graph.vercel.app/graph?username=aarav-pathak&bg_color=0d1117&color=8b949e&line=58a6ff&point=58a6ff&area_color=1f6feb&area=true&hide_border=true&hide_title=true&radius=10&height=320&days=35&grid=false"
+      width="100%"
+      alt="Aarav Pathak GitHub Activity Graph"
+    />
+  </a>
+</p>
 
-</div>
+## CONTRIBUTIONS
 
-<br>
-
-<div align="center">
-
-<a href="https://github.com/aarav-pathak">
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=aarav-pathak&bg_color=0d1117&color=8b949e&line=58a6ff&point=c9d1d9&area=true&hide_border=true" width="96%" alt="GitHub activity graph" />
-</a>
-
-</div>
+<p align="center">
+  <img
+    src="./profile-3d-contrib/profile-night-view.svg"
+    width="100%"
+    alt="3D GitHub Contribution Graph"
+  />
+</p>
 
 CONTRIBUTION SYSTEM
 
