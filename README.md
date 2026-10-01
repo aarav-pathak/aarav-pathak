@@ -144,14 +144,6 @@ Authentication
 
 ## CONTRIBUTIONS
 
-<p align="center">
-  <img
-    src="./profile-3d-contrib/profile-night-view.svg"
-    width="100%"
-    alt="3D GitHub Contribution Graph"
-  />
-</p>
-
 CONTRIBUTION SYSTEM
 
 The profile contribution map is generated automatically by GitHub Actions and committed back to this repository.
