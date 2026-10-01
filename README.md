@@ -1,52 +1,50 @@
 <div align="center">
 
-# AARAV PATHAK
+AARAV PATHAK
 
-**Developer · Product Builder · Competitive Programmer**
+Software Developer · Product Builder · Competitive Programmer
 
-I build software products, web systems and experiments across  
-product engineering, AI and real-world applications.
+I build products, web systems and technical experiments across
+full-stack engineering, AI and problem solving.
 
-**Founder, [Filter Minds](https://www.filterminds.com/)**
+Founder — Filter Minds
 
-[GitHub](https://github.com/aarav-pathak) · [Filter Minds](https://www.filterminds.com/) · [LinkedIn](#) · [Codeforces](#)
+GitHub ·
+LinkedIn ·
+X ·
+Email
 
 </div>
 
----
-
-## SELECTED WORK
+SELECTED WORK
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
-### FILTER MINDS
+FILTER MINDS
 
-**Research · Ideas · Perspective**
+Research · Ideas · Perspective
 
-An evidence-first platform built around better questions, clearer perspectives and high-signal public discussion.
+Building a research-first platform for questions, evidence, expertise and high-signal discussion.
 
-**Focus**
+Role
+Founder · Developer
 
-`Research` `Discussion` `Expertise` `Product`
-
-[Live](https://www.filterminds.com/)
+Website · GitHub
 
 </td>
 <td width="50%" valign="top">
 
-### MYCLOSEST
+CLOSEST
 
-**Full Stack · Product Engineering**
+Full Stack · Product Engineering
 
-A server-rendered web application with authentication, sessions, search, filtering, pagination and persistent data.
+A server-rendered application built around authentication, sessions, search, filtering, pagination and persistent data.
 
-**Stack**
+Node.js Express EJS MongoDB
 
-`Node.js` `Express` `EJS` `MongoDB`
-
-[Live](https://closest.onrender.com/)
+Live · GitHub
 
 </td>
 </tr>
@@ -54,116 +52,81 @@ A server-rendered web application with authentication, sessions, search, filteri
 <tr>
 <td width="50%" valign="top">
 
-### KRASHI VANI
+KRISHI VAANI
 
-**Agriculture · Web Application**
+Web · Agriculture · Next.js
 
-An agriculture-focused application exploring practical technology for information and user-facing workflows.
+A web application exploring technology-driven workflows for agriculture and information delivery.
 
-**Stack**
+Next.js TypeScript Tailwind
 
-`JavaScript` `Web` `Application`
-
-[Live](https://krishi-vaani-three.vercel.app/dashboard)
+Live · GitHub
 
 </td>
 <td width="50%" valign="top">
 
-### STRANGERTALK
+EVM
 
-**Web · Social**
+Web · Next.js
 
-A web-based social communication experiment focused on connecting people through conversation.
+A Next.js project focused on an EVM-oriented web experience and interface.
 
-**Focus**
+Next.js TypeScript
 
-`Web` `Communication` `Social`
-
-[Live](https://strangery.vercel.app/)
-
-</td>
-</tr>
-
-<tr>
-<td width="50%" valign="top">
-
-### TASKY
-
-**Productivity · Web**
-
-A task-management application designed around simple, focused productivity workflows.
-
-**Focus**
-
-`Tasks` `Productivity` `Web`
-
-[Live](https://tasky-seven-delta.vercel.app/auth)
-
-</td>
-<td width="50%" valign="top">
-
-### MORE IN THE LAB
-
-I keep smaller experiments, prototypes, algorithms and technical explorations across my public repositories.
-
-[Explore repositories](https://github.com/aarav-pathak?tab=repositories)
+Live · GitHub
 
 </td>
 </tr>
 </table>
 
----
+ENGINEERING
 
-## ENGINEERING
+Languages
 
-<table>
-<tr>
-<td valign="top" width="33%">
+Web & Backend
 
-### LANGUAGES
+Data & Infrastructure
 
-`C++`  
-`Python`  
-`JavaScript`  
-`TypeScript`
+C++
 
-</td>
-<td valign="top" width="33%">
+JavaScript
 
-### APPLICATIONS
+MongoDB
 
-`Node.js`  
-`Express`  
-`React`  
-`Next.js`  
-`EJS`
+Python
 
-</td>
-<td valign="top" width="33%">
+TypeScript
 
-### DATA & SYSTEMS
+Supabase
 
-`MongoDB`  
-`Supabase`  
-`REST APIs`  
-`Authentication`  
-`Git`
+JavaScript
 
-</td>
-</tr>
-</table>
+Node.js
 
----
+REST APIs
 
-## GITHUB
+TypeScript
+
+Express
+
+Git / GitHub
+
+
+
+React / Next.js
+
+Authentication
+
+GITHUB
 
 <div align="center">
 
 <a href="https://github.com/aarav-pathak">
-  <img src="https://github-readme-stats.vercel.app/api?username=aarav-pathak&show_icons=true&hide_border=true&include_all_commits=true&count_private=true&rank_icon=github&theme=github_dark" height="165" alt="GitHub statistics" />
+<img src="https://github-readme-stats.vercel.app/api?username=aarav-pathak&show_icons=true&hide_border=true&include_all_commits=true&rank_icon=github&theme=github_dark" height="170" alt="GitHub statistics" />
 </a>
+
 <a href="https://github.com/aarav-pathak">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=aarav-pathak&layout=compact&hide_border=true&langs_count=8&theme=github_dark" height="165" alt="Most used languages" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=aarav-pathak&layout=compact&hide_border=true&langs_count=8&theme=github_dark" height="170" alt="Top languages" />
 </a>
 
 </div>
@@ -173,86 +136,73 @@ I keep smaller experiments, prototypes, algorithms and technical explorations ac
 <div align="center">
 
 <a href="https://github.com/aarav-pathak">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=aarav-pathak&bg_color=0d1117&color=8b949e&line=58a6ff&point=c9d1d9&area=true&hide_border=true" width="96%" alt="GitHub contribution activity graph" />
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=aarav-pathak&bg_color=0d1117&color=8b949e&line=58a6ff&point=c9d1d9&area=true&hide_border=true" width="96%" alt="GitHub activity graph" />
 </a>
 
 </div>
 
----
+CONTRIBUTION SYSTEM
 
-## CONTRIBUTION MAP
+The profile contribution map is generated automatically by GitHub Actions and committed back to this repository.
 
 <div align="center">
 
-<a href="https://github.com/aarav-pathak">
-  <img src="https://ghchart.rshah.org/0d1117/aarav-pathak" width="96%" alt="GitHub contribution graph" />
-</a>
+<img src="./profile-3d-contrib/profile-night-view.svg" width="96%" alt="3D GitHub contribution graph" />
 
 </div>
 
----
-
-## COMPETITIVE PROGRAMMING
-
-I use competitive programming to sharpen algorithmic thinking, data structures, problem solving and implementation speed.
-
-**Primary language**
-
-`C++`
-
-**Practice**
-
-`Data Structures` · `Algorithms` · `Problem Solving` · `Competitive Programming`
-
-<!--
-Add the Codeforces section once the exact Codeforces handle is confirmed.
-
-Example:
-
-<div align="center">
-  <img src="YOUR_CODEFORCES_STATS_IMAGE" width="96%" alt="Codeforces statistics" />
-</div>
--->
-
----
-
-## BUILDING
-
-### FILTER MINDS
-
-Founder / Developer
-
-Building a research-first platform for questions, evidence, perspective and high-signal discussion.
-
-[filterminds.com](https://www.filterminds.com/)
-
----
-
-## CURRENT DIRECTION
-
-```text
-PRODUCT ENGINEERING
-        +
-AI / INTELLIGENT SYSTEMS
-        +
 COMPETITIVE PROGRAMMING
-        +
-REAL-WORLD SOFTWARE
-```
-
-I care about building things that are useful, technically solid and worth continuing after the prototype works.
-
----
-
-## CONNECT
 
 <div align="center">
 
-[GitHub](https://github.com/aarav-pathak) · [Filter Minds](https://www.filterminds.com/) · [LinkedIn](#) · [Codeforces](#)
+<a href="https://codeforces.com/profile/orthodoxcoder">
+<img src="https://codeforces-readme-stats.vercel.app/api/card?username=orthodoxcoder&theme=github_dark" width="48%" alt="Codeforces statistics" />
+</a>
+
+<a href="https://leetcode.com/u/orthodoxcoder/">
+<img src="https://leetcard.jacoblin.cool/orthodoxcoder?theme=dark&border=0&radius=8&ext=activity" width="48%" alt="LeetCode statistics" />
+</a>
 
 </div>
 
----
+<br>
+
+<div align="center">
+
+Codeforces · 764 current rating · 960 peak · 185 problems solved
+LeetCode · 199 problems solved across C++, JavaScript and Python
+CodeChef · 1396 rating · 82 problems solved · 22 contests
+
+</div>
+
+Codeforces ·
+LeetCode ·
+CodeChef
+
+BUILDING
+
+FILTER MINDS
+
+A platform for better questions, clearer perspectives and evidence-first discussion.
+
+Currently focused on:
+
+Product Engineering · Research Systems · AI · Community
+
+filterminds.com
+
+ELSEWHERE
+
+<div align="center">
+
+LinkedIn ·
+X ·
+Codeforces ·
+LeetCode ·
+CodeChef ·
+Email
+
+</div>
 
 <div align="center">
 
