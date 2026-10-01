@@ -11,6 +11,7 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+    name: generate-github-profile-3d-contrib
 
     steps:
       - name: Checkout
@@ -22,15 +23,11 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
 
-      - name: Commit generated assets
+      - name: Commit generated files
         run: |
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
+          git config user.name github-actions
+          git config user.email github-actions@github.com
           git add -A .
-
-          if git diff --cached --quiet; then
-            echo "No generated changes."
-          else
-            git commit -m "chore: update contribution graph"
+          if git commit -m "generated"; then
             git push
           fi
