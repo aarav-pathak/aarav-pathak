@@ -1,127 +1,88 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 175" width="830" height="175" fill="none">
-  <title>Engineering Skills Overview</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 148" width="830" height="148" fill="none">
+  <title>Engineering Skills</title>
   <defs>
-    <linearGradient id="col-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#141a23"/>
+    <linearGradient id="bg-col" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#111820"/>
       <stop offset="100%" stop-color="#0d1117"/>
     </linearGradient>
-    <linearGradient id="col1-laser" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#79c0ff" stop-opacity="1"/>
-      <stop offset="100%" stop-color="#58a6ff" stop-opacity="0"/>
-      <animate attributeName="x1" values="-100%;100%" dur="3.2s" repeatCount="indefinite"/>
-      <animate attributeName="x2" values="0%;200%" dur="3.2s" repeatCount="indefinite"/>
+    <linearGradient id="l1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#388bfd" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#79c0ff" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#388bfd" stop-opacity="0"/>
+      <animate attributeName="x1" values="-100%;100%" dur="3.5s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="0%;200%" dur="3.5s" repeatCount="indefinite"/>
     </linearGradient>
-    <linearGradient id="col2-laser" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#3fb950" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#7ee787" stop-opacity="1"/>
-      <stop offset="100%" stop-color="#3fb950" stop-opacity="0"/>
-      <animate attributeName="x1" values="-100%;100%" dur="3.6s" repeatCount="indefinite"/>
-      <animate attributeName="x2" values="0%;200%" dur="3.6s" repeatCount="indefinite"/>
-    </linearGradient>
-    <linearGradient id="col3-laser" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#d29922" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#ffe58f" stop-opacity="1"/>
-      <stop offset="100%" stop-color="#d29922" stop-opacity="0"/>
+    <linearGradient id="l2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#56d364" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#7ee787" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#56d364" stop-opacity="0"/>
       <animate attributeName="x1" values="-100%;100%" dur="4s" repeatCount="indefinite"/>
       <animate attributeName="x2" values="0%;200%" dur="4s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="l3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e3b341" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#f0c963" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#e3b341" stop-opacity="0"/>
+      <animate attributeName="x1" values="-100%;100%" dur="4.5s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="0%;200%" dur="4.5s" repeatCount="indefinite"/>
     </linearGradient>
   </defs>
 
   <style>
-    @keyframes pulseDotSK {
-      0%, 100% { opacity: 1; transform: scale(1); }
-      50% { opacity: 0.35; transform: scale(0.85); }
-    }
-    .col-title {
-      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
-      font-size: 11px;
-      font-weight: 600;
-      letter-spacing: 2px;
-    }
-    .chip-bg {
-      fill: rgba(56, 139, 253, 0.1);
-      stroke: rgba(56, 139, 253, 0.35);
-      stroke-width: 1;
-    }
-    .chip-text {
-      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
-      font-size: 11px;
-      font-weight: 500;
-      fill: #e6edf3;
-    }
-    .sk1-dot { animation: pulseDotSK 2s infinite; transform-origin: 20px 28px; }
-    .sk2-dot { animation: pulseDotSK 2.4s infinite; transform-origin: 20px 28px; }
-    .sk3-dot { animation: pulseDotSK 2.8s infinite; transform-origin: 20px 28px; }
+    @keyframes pdot { 0%,100%{r:2.5;opacity:1} 50%{r:4;opacity:0.2} }
+    .col-label{ font-family:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,monospace; font-size:10px; font-weight:600; letter-spacing:2px; }
+    .chip-t{ font-family:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,monospace; font-size:10.5px; font-weight:500; fill:#adbac7; }
+    .d1{ animation:pdot 2s infinite; transform-origin:18px 22px; }
+    .d2{ animation:pdot 2.4s infinite; transform-origin:18px 22px; }
+    .d3{ animation:pdot 2.8s infinite; transform-origin:18px 22px; }
   </style>
 
   <!-- Column 1: Languages -->
-  <g transform="translate(0, 0)">
-    <rect x="0.5" y="0.5" width="261" height="174" rx="12" fill="url(#col-bg)" stroke="#30363d"/>
-    <path d="M 12 1 L 250 1" stroke="url(#col1-laser)" stroke-width="2" stroke-linecap="round"/>
-    
-    <circle cx="20" cy="28" r="3" fill="#58a6ff" class="sk1-dot"/>
-    <text x="30" y="32" class="col-title" fill="#58a6ff">LANGUAGES</text>
-    
-    <!-- Row 1 -->
-    <rect x="18" y="52" width="46" height="24" rx="12" class="chip-bg"/>
-    <text x="41" y="68" text-anchor="middle" class="chip-text">C++</text>
-    
-    <rect x="70" y="52" width="68" height="24" rx="12" class="chip-bg"/>
-    <text x="104" y="68" text-anchor="middle" class="chip-text">Python</text>
-    
-    <rect x="144" y="52" width="98" height="24" rx="12" class="chip-bg"/>
-    <text x="193" y="68" text-anchor="middle" class="chip-text">JavaScript</text>
-    
-    <!-- Row 2 -->
-    <rect x="18" y="86" width="98" height="24" rx="12" class="chip-bg"/>
-    <text x="67" y="102" text-anchor="middle" class="chip-text">TypeScript</text>
-  </g>
+  <rect x="0.5" y="0.5" width="257" height="147" rx="12" fill="url(#bg-col)" stroke="#21262d"/>
+  <line x1="14" y1="1" x2="244" y2="1" stroke="url(#l1)" stroke-width="1.2" stroke-linecap="round"/>
+  <circle cx="18" cy="22" r="2.5" fill="#388bfd" class="d1"/>
+  <text x="28" y="26" class="col-label" fill="#388bfd">LANGUAGES</text>
+  <!-- chips row 1 -->
+  <rect x="16" y="44" width="42" height="20" rx="10" fill="rgba(56,139,253,0.1)" stroke="rgba(56,139,253,0.2)"/>
+  <text x="37" y="58" text-anchor="middle" class="chip-t">C++</text>
+  <rect x="64" y="44" width="60" height="20" rx="10" fill="rgba(56,139,253,0.1)" stroke="rgba(56,139,253,0.2)"/>
+  <text x="94" y="58" text-anchor="middle" class="chip-t">Python</text>
+  <rect x="130" y="44" width="86" height="20" rx="10" fill="rgba(56,139,253,0.1)" stroke="rgba(56,139,253,0.2)"/>
+  <text x="173" y="58" text-anchor="middle" class="chip-t">JavaScript</text>
+  <!-- row 2 -->
+  <rect x="16" y="72" width="90" height="20" rx="10" fill="rgba(56,139,253,0.1)" stroke="rgba(56,139,253,0.2)"/>
+  <text x="61" y="86" text-anchor="middle" class="chip-t">TypeScript</text>
 
   <!-- Column 2: Web & Backend -->
-  <g transform="translate(284, 0)">
-    <rect x="0.5" y="0.5" width="261" height="174" rx="12" fill="url(#col-bg)" stroke="#30363d"/>
-    <path d="M 12 1 L 250 1" stroke="url(#col2-laser)" stroke-width="2" stroke-linecap="round"/>
-    
-    <circle cx="20" cy="28" r="3" fill="#3fb950" class="sk2-dot"/>
-    <text x="30" y="32" class="col-title" fill="#3fb950">WEB &amp; BACKEND</text>
-    
-    <!-- Row 1 -->
-    <rect x="18" y="52" width="74" height="24" rx="12" class="chip-bg"/>
-    <text x="55" y="68" text-anchor="middle" class="chip-text">Node.js</text>
-    
-    <rect x="98" y="52" width="74" height="24" rx="12" class="chip-bg"/>
-    <text x="135" y="68" text-anchor="middle" class="chip-text">Express</text>
-    
-    <!-- Row 2 -->
-    <rect x="18" y="86" width="128" height="24" rx="12" class="chip-bg"/>
-    <text x="82" y="102" text-anchor="middle" class="chip-text">React / Next.js</text>
-    
-    <!-- Row 3 -->
-    <rect x="18" y="120" width="120" height="24" rx="12" class="chip-bg"/>
-    <text x="78" y="136" text-anchor="middle" class="chip-text">Authentication</text>
-  </g>
+  <rect x="287.5" y="0.5" width="257" height="147" rx="12" fill="url(#bg-col)" stroke="#21262d"/>
+  <line x1="301" y1="1" x2="531" y2="1" stroke="url(#l2)" stroke-width="1.2" stroke-linecap="round"/>
+  <circle cx="305" cy="22" r="2.5" fill="#56d364" class="d2"/>
+  <text x="315" y="26" class="col-label" fill="#56d364">WEB &amp; BACKEND</text>
+  <!-- row 1 -->
+  <rect x="303" y="44" width="68" height="20" rx="10" fill="rgba(56,139,253,0.1)" stroke="rgba(56,139,253,0.2)"/>
+  <text x="337" y="58" text-anchor="middle" class="chip-t">Node.js</text>
+  <rect x="379" y="44" width="70" height="20" rx="10" fill="rgba(56,139,253,0.1)" stroke="rgba(56,139,253,0.2)"/>
+  <text x="414" y="58" text-anchor="middle" class="chip-t">Express</text>
+  <!-- row 2 -->
+  <rect x="303" y="72" width="120" height="20" rx="10" fill="rgba(56,139,253,0.1)" stroke="rgba(56,139,253,0.2)"/>
+  <text x="363" y="86" text-anchor="middle" class="chip-t">React / Next.js</text>
+  <!-- row 3 -->
+  <rect x="303" y="100" width="112" height="20" rx="10" fill="rgba(56,139,253,0.1)" stroke="rgba(56,139,253,0.2)"/>
+  <text x="359" y="114" text-anchor="middle" class="chip-t">Authentication</text>
 
-  <!-- Column 3: Data & Infrastructure -->
-  <g transform="translate(568, 0)">
-    <rect x="0.5" y="0.5" width="261" height="174" rx="12" fill="url(#col-bg)" stroke="#30363d"/>
-    <path d="M 12 1 L 250 1" stroke="url(#col3-laser)" stroke-width="2" stroke-linecap="round"/>
-    
-    <circle cx="20" cy="28" r="3" fill="#d29922" class="sk3-dot"/>
-    <text x="30" y="32" class="col-title" fill="#d29922">DATA &amp; INFRA</text>
-    
-    <!-- Row 1 -->
-    <rect x="18" y="52" width="80" height="24" rx="12" class="chip-bg"/>
-    <text x="58" y="68" text-anchor="middle" class="chip-text">MongoDB</text>
-    
-    <rect x="104" y="52" width="84" height="24" rx="12" class="chip-bg"/>
-    <text x="146" y="68" text-anchor="middle" class="chip-text">Supabase</text>
-    
-    <!-- Row 2 -->
-    <rect x="18" y="86" width="88" height="24" rx="12" class="chip-bg"/>
-    <text x="62" y="102" text-anchor="middle" class="chip-text">REST APIs</text>
-    
-    <rect x="112" y="86" width="108" height="24" rx="12" class="chip-bg"/>
-    <text x="166" y="102" text-anchor="middle" class="chip-text">Git / GitHub</text>
-  </g>
+  <!-- Column 3: Data & Infra -->
+  <rect x="573.5" y="0.5" width="256" height="147" rx="12" fill="url(#bg-col)" stroke="#21262d"/>
+  <line x1="587" y1="1" x2="816" y2="1" stroke="url(#l3)" stroke-width="1.2" stroke-linecap="round"/>
+  <circle cx="591" cy="22" r="2.5" fill="#e3b341" class="d3"/>
+  <text x="601" y="26" class="col-label" fill="#e3b341">DATA &amp; INFRA</text>
+  <!-- row 1 -->
+  <rect x="589" y="44" width="76" height="20" rx="10" fill="rgba(56,139,253,0.1)" stroke="rgba(56,139,253,0.2)"/>
+  <text x="627" y="58" text-anchor="middle" class="chip-t">MongoDB</text>
+  <rect x="673" y="44" width="78" height="20" rx="10" fill="rgba(56,139,253,0.1)" stroke="rgba(56,139,253,0.2)"/>
+  <text x="712" y="58" text-anchor="middle" class="chip-t">Supabase</text>
+  <!-- row 2 -->
+  <rect x="589" y="72" width="82" height="20" rx="10" fill="rgba(56,139,253,0.1)" stroke="rgba(56,139,253,0.2)"/>
+  <text x="630" y="86" text-anchor="middle" class="chip-t">REST APIs</text>
+  <rect x="679" y="72" width="100" height="20" rx="10" fill="rgba(56,139,253,0.1)" stroke="rgba(56,139,253,0.2)"/>
+  <text x="729" y="86" text-anchor="middle" class="chip-t">Git / GitHub</text>
 </svg>

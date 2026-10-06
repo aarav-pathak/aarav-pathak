@@ -1,74 +1,38 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 410 185" width="410" height="185" fill="none">
-  <title>Strangery - Real-time Connect</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 410 180" width="410" height="180" fill="none">
+  <title>Strangery</title>
   <defs>
-    <linearGradient id="st-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#131922"/>
+    <linearGradient id="cbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#111820"/>
       <stop offset="100%" stop-color="#0d1117"/>
     </linearGradient>
-    <linearGradient id="st-laser" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="laser" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#bc8cff" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#d2a8ff" stop-opacity="1"/>
-      <stop offset="100%" stop-color="#58a6ff" stop-opacity="0"/>
-      <animate attributeName="x1" values="-100%;100%" dur="3.6s" repeatCount="indefinite"/>
-      <animate attributeName="x2" values="0%;200%" dur="3.6s" repeatCount="indefinite"/>
+      <stop offset="50%" stop-color="#bc8cff" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#bc8cff" stop-opacity="0"/>
+      <animate attributeName="x1" values="-100%;100%" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="0%;200%" dur="4s" repeatCount="indefinite"/>
     </linearGradient>
   </defs>
-  <style>
-    .cat-label {
-      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
-      font-size: 10px;
-      font-weight: 600;
-      letter-spacing: 1.8px;
-      fill: #bc8cff;
-    }
-    .card-title {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-      font-size: 18px;
-      font-weight: 700;
-      letter-spacing: -0.2px;
-      fill: #ffffff;
-    }
-    .card-desc {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-      font-size: 13px;
-      font-weight: 400;
-      fill: #8b949e;
-      line-height: 19px;
-    }
-    .chip-text {
-      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
-      font-size: 11px;
-      font-weight: 500;
-      fill: #79c0ff;
-    }
-  </style>
-
-  <!-- Card Base -->
-  <rect x="0.5" y="0.5" width="409" height="184" rx="12" fill="url(#st-bg)" stroke="#30363d"/>
-  <path d="M 12 1 L 398 1" stroke="url(#st-laser)" stroke-width="2" stroke-linecap="round"/>
-
-  <!-- Category Badge -->
-  <g transform="translate(24, 20)">
-    <rect x="0" y="0" width="190" height="20" rx="10" fill="rgba(188, 140, 255, 0.1)" stroke="rgba(188, 140, 255, 0.3)" stroke-width="1"/>
-    <text x="10" y="13.5" class="cat-label">REALTIME · NETWORKING</text>
-  </g>
-
-  <!-- Title & Description -->
-  <text x="24" y="66" class="card-title">Strangery</text>
-  <text x="24" y="92" class="card-desc">
-    <tspan x="24" dy="0">Real-time anonymous web communication and messaging</tspan>
-    <tspan x="24" dy="19">system with instant pairing and low-latency sockets.</tspan>
-  </text>
+  <rect x="0.5" y="0.5" width="409" height="179" rx="12" fill="url(#cbg)" stroke="#21262d" stroke-width="1"/>
   
-  <!-- Tech Chips -->
-  <g transform="translate(0, 142)">
-    <rect x="24" y="0" width="80" height="24" rx="12" fill="rgba(56, 139, 253, 0.12)" stroke="rgba(56, 139, 253, 0.35)"/>
-    <text x="64" y="16" text-anchor="middle" class="chip-text">WebSockets</text>
-    
-    <rect x="112" y="0" width="70" height="24" rx="12" fill="rgba(56, 139, 253, 0.12)" stroke="rgba(56, 139, 253, 0.35)"/>
-    <text x="147" y="16" text-anchor="middle" class="chip-text">Node.js</text>
-    
-    <rect x="190" y="0" width="70" height="24" rx="12" fill="rgba(56, 139, 253, 0.12)" stroke="rgba(56, 139, 253, 0.35)"/>
-    <text x="225" y="16" text-anchor="middle" class="chip-text">Express</text>
+  <line x1="14" y1="1" x2="396" y2="1" stroke="url(#laser)" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- badge -->
+  <rect x="24" y="18" width="158" height="19" rx="9.5" fill="rgba(188,140,255,0.08)" stroke="rgba(188,140,255,0.28)" stroke-width="0.75"/>
+  <text x="34" y="30" font-family="ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,monospace" font-size="9.5" font-weight="600" letter-spacing="1.5" fill="#bc8cff">REALTIME · NETWORKING</text>
+  <!-- title -->
+  <text x="24" y="66" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="-0.3" fill="#e6edf3">Strangery</text>
+  <!-- desc -->
+  <text font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="400" fill="#7d8590">
+    <tspan x="24" y="90">Anonymous real-time communication with instant pairing,</tspan>
+    <tspan x="24" dy="18">low-latency WebSocket connections and minimal interface.</tspan>
+  </text>
+  <!-- chips -->
+  <g transform="translate(0, 146)">
+    <rect x="24" y="0" width="94" height="22" rx="11" fill="rgba(56,139,253,0.1)" stroke="rgba(56,139,253,0.25)" stroke-width="1"/>
+    <text x="71" y="14.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,monospace" font-size="10.5" font-weight="500" fill="#79c0ff">WebSockets</text>
+    <rect x="126" y="0" width="73" height="22" rx="11" fill="rgba(56,139,253,0.1)" stroke="rgba(56,139,253,0.25)" stroke-width="1"/>
+    <text x="162" y="14.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,monospace" font-size="10.5" font-weight="500" fill="#79c0ff">Node.js</text>
+    <rect x="207" y="0" width="73" height="22" rx="11" fill="rgba(56,139,253,0.1)" stroke="rgba(56,139,253,0.25)" stroke-width="1"/>
+    <text x="243" y="14.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,monospace" font-size="10.5" font-weight="500" fill="#79c0ff">Express</text>
   </g>
 </svg>
