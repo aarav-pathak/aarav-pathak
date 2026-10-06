@@ -6,10 +6,19 @@
 
 <br/>
 
+<!--- RADAR & FOCUS --->
+<img src="assets/section-initiatives.svg" alt="Radar & Focus" width="830"/>
+
+<br/>
+
 <div align="center">
+<img src="assets/focus-radar.svg" alt="Current Initiatives" width="830"/>
+</div>
 
+<br/>
+
+<div align="center">
 <img src="assets/divider.svg" alt="" width="830"/>
-
 </div>
 
 <br/>
@@ -76,12 +85,20 @@
 
 <br/>
 
-<!--- ENGINEERING --->
+<!--- ENGINEERING & PRINCIPLES --->
 <img src="assets/section-engineering.svg" alt="Engineering" width="830"/>
 
 <br/>
 
+<div align="center">
 <img src="assets/skills.svg" alt="Skills" width="830"/>
+</div>
+
+<br/>
+
+<div align="center">
+<img src="assets/philosophy.svg" alt="Engineering Principles" width="830"/>
+</div>
 
 <br/>
 
@@ -91,8 +108,16 @@
 
 <br/>
 
-<!--- GITHUB --->
-<img src="assets/section-github.svg" alt="GitHub" width="830"/>
+<!--- CONTRIBUTION & GITHUB ACTIVITY --->
+<img src="assets/section-activity.svg" alt="Contribution Activity" width="830"/>
+
+<br/>
+
+<div align="center">
+<a href="https://github.com/aarav-pathak">
+  <img src="profile-3d-contrib/profile-night-rainbow.svg" alt="3D Contribution Graph" width="830"/>
+</a>
+</div>
 
 <br/>
 
@@ -112,14 +137,6 @@
 
 <div align="center">
 <a href="https://github.com/aarav-pathak">
-  <img width="830" src="https://github-readme-activity-graph.vercel.app/graph?username=aarav-pathak&bg_color=0d1117&color=58a6ff&line=388bfd&point=58a6ff&area=true&area_color=388bfd&hide_border=true" alt="Contribution Graph"/>
-</a>
-</div>
-
-<br/>
-
-<div align="center">
-<a href="https://github.com/aarav-pathak">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=aarav-pathak&theme=github-dark&hide_border=true&background=0d1117&ring=388bfd&fire=58a6ff&currStreakLabel=79c0ff" alt="GitHub Streak"/>
 </a>
 </div>
@@ -132,12 +149,14 @@
 
 <br/>
 
-<!--- COMPETITIVE --->
+<!--- COMPETITIVE PROGRAMMING --->
 <img src="assets/section-competitive.svg" alt="Competitive Programming" width="830"/>
 
 <br/>
 
+<div align="center">
 <img src="assets/competitive.svg" alt="Competitive Programming Stats" width="830"/>
+</div>
 
 <br/>
 
@@ -165,6 +184,7 @@
 </div>
 
 <br/>
+
 <div align="center">
 <img src="assets/divider.svg" alt="" width="830"/>
 </div>

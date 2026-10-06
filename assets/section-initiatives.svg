@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 36" width="830" height="36" fill="none">
+  <title>RADAR &amp; FOCUS</title>
+  <defs>
+    <linearGradient id="sli" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#388bfd" stop-opacity="0.6"/>
+      <stop offset="30%" stop-color="#30363d" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#21262d" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <style>
+    .sl{ font-family:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,monospace; font-size:10.5px; font-weight:600; letter-spacing:2.5px; fill:#388bfd; }
+  </style>
+  <circle cx="6" cy="18" r="2.5" fill="#388bfd"/>
+  <text x="18" y="22" class="sl">RADAR &amp; FOCUS</text>
+  <line x1="160" y1="18" x2="830" y2="18" stroke="url(#sli)" stroke-width="0.75"/>
+</svg>
