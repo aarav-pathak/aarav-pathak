@@ -1,58 +1,72 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 140" width="830" height="140" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 110" width="830" height="110" fill="none">
   <title>Engineering Principles</title>
   <defs>
     <linearGradient id="pbg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#111820"/>
-      <stop offset="100%" stop-color="#0a0f14"/>
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#080c10"/>
     </linearGradient>
     <linearGradient id="plaser" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#bc8cff" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#d2a8ff" stop-opacity="0.9"/>
-      <stop offset="100%" stop-color="#58a6ff" stop-opacity="0"/>
-      <animate attributeName="x1" values="-100%;100%" dur="4.2s" repeatCount="indefinite"/>
-      <animate attributeName="x2" values="0%;200%" dur="4.2s" repeatCount="indefinite"/>
+      <stop offset="50%" stop-color="#d2a8ff" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#bc8cff" stop-opacity="0"/>
+      <animate attributeName="x1" values="-100%;100%" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="0%;200%" dur="4s" repeatCount="indefinite"/>
     </linearGradient>
-    <radialGradient id="pglow" cx="90%" cy="20%" r="50%">
-      <stop offset="0%" stop-color="#8957e5" stop-opacity="0.12"/>
-      <stop offset="100%" stop-color="#111820" stop-opacity="0"/>
-    </radialGradient>
   </defs>
+
   <style>
-    @keyframes shineDot { 0%,100%{opacity:0.4;transform:scale(1)} 50%{opacity:1;transform:scale(1.4)} }
-    .sd { animation: shineDot 3s ease-in-out infinite; }
-    .ph-title { font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif; font-size:14px; font-weight:700; fill:#e6edf3; }
-    .ph-desc { font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif; font-size:12px; font-weight:400; fill:#7d8590; line-height:1.5; }
-    .pmono { font-family:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,monospace; font-size:10px; font-weight:700; letter-spacing:2px; fill:#bc8cff; }
+    @keyframes pulsePurple {
+      0%,100% { opacity: 1; r: 3.5; }
+      50% { opacity: 0.3; r: 5; }
+    }
+    .pulse-dot-p { animation: pulsePurple 2.6s ease-in-out infinite; transform-origin: 24px 22px; }
+    .label-p {
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+      font-size: 10px; font-weight: 600; letter-spacing: 1.8px; fill: #bc8cff;
+    }
+    .cell-title {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 13.5px; font-weight: 600; fill: #e6edf3;
+    }
+    .cell-desc {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 11.5px; font-weight: 400; fill: #7d8590;
+    }
   </style>
 
-  <rect x="0.5" y="0.5" width="829" height="139" rx="14" fill="url(#pbg)" stroke="#21262d" stroke-width="1"/>
-  <rect width="830" height="140" rx="14" fill="url(#pglow)"/>
-  <line x1="14" y1="1" x2="816" y2="1" stroke="url(#plaser)" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Frame -->
+  <rect x="0.5" y="0.5" width="829" height="109" rx="10" fill="url(#pbg)" stroke="#21262d" stroke-width="1"/>
+  <line x1="12" y1="1" x2="818" y2="1" stroke="url(#plaser)" stroke-width="1.2" stroke-linecap="round"/>
 
-  <!-- Top label -->
-  <text x="28" y="28" class="pmono">CORE PRINCIPLES</text>
+  <!-- Header row inside card -->
+  <circle cx="24" cy="22" r="3.5" fill="#bc8cff" class="pulse-dot-p"/>
+  <circle cx="24" cy="22" r="2" fill="#d2a8ff"/>
+  <text x="36" y="25.5" class="label-p">ENGINEERING PHILOSOPHY &amp; SYSTEM DESIGN</text>
 
-  <!-- Card 1 -->
-  <g transform="translate(28, 44)">
-    <rect width="236" height="74" rx="8" fill="#161b22" stroke="#30363d" stroke-width="0.75"/>
-    <text x="14" y="24" class="ph-title">📐 High Signal Architecture</text>
-    <text x="14" y="44" class="ph-desc">Prioritizing deterministic state,</text>
-    <text x="14" y="60" class="ph-desc">clean abstractions &amp; low latency.</text>
+  <line x1="20" y1="38" x2="810" y2="38" stroke="#21262d" stroke-width="0.75"/>
+
+  <!-- 3 Clean Minimal Columns -->
+  <!-- Column 1 -->
+  <g transform="translate(24, 52)">
+    <text x="0" y="14" class="cell-title">High Signal Architecture</text>
+    <text x="0" y="32" class="cell-desc">Deterministic state, clean abstractions &amp; low latency</text>
   </g>
 
-  <!-- Card 2 -->
-  <g transform="translate(296, 44)">
-    <rect width="236" height="74" rx="8" fill="#161b22" stroke="#30363d" stroke-width="0.75"/>
-    <text x="14" y="24" class="ph-title">⚡ Algorithmic Rigor</text>
-    <text x="14" y="44" class="ph-desc">Grounded in competitive CP,</text>
-    <text x="14" y="60" class="ph-desc">optimal space &amp; time complexity.</text>
+  <!-- Vertical Divider 1 -->
+  <line x1="285" y1="46" x2="285" y2="96" stroke="#21262d" stroke-width="0.75"/>
+
+  <!-- Column 2 -->
+  <g transform="translate(305, 52)">
+    <text x="0" y="14" class="cell-title">Algorithmic Rigor</text>
+    <text x="0" y="32" class="cell-desc">Grounded in competitive programming &amp; complexity</text>
   </g>
 
-  <!-- Card 3 -->
-  <g transform="translate(564, 44)">
-    <rect width="236" height="74" rx="8" fill="#161b22" stroke="#30363d" stroke-width="0.75"/>
-    <text x="14" y="24" class="ph-title">🚀 Product Obsession</text>
-    <text x="14" y="44" class="ph-desc">Shipping end-to-end usable tools</text>
-    <text x="14" y="60" class="ph-desc">with zero clutter and real utility.</text>
+  <!-- Vertical Divider 2 -->
+  <line x1="565" y1="46" x2="565" y2="96" stroke="#21262d" stroke-width="0.75"/>
+
+  <!-- Column 3 -->
+  <g transform="translate(585, 52)">
+    <text x="0" y="14" class="cell-title">Product Focus</text>
+    <text x="0" y="32" class="cell-desc">Shipping end-to-end usable tools with zero clutter</text>
   </g>
 </svg>
