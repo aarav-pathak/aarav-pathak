@@ -5,10 +5,12 @@
       <stop offset="0%" stop-color="#141a23"/>
       <stop offset="100%" stop-color="#0d1117"/>
     </linearGradient>
-    <linearGradient id="top-shine-evm" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#bc8cff" stop-opacity="0.6"/>
-      <stop offset="50%" stop-color="#30363d" stop-opacity="0.3"/>
-      <stop offset="100%" stop-color="#30363d" stop-opacity="0.1"/>
+    <linearGradient id="evm-laser" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#bc8cff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#bc8cff" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#58a6ff" stop-opacity="0"/>
+      <animate attributeName="x1" values="-100%;100%" dur="3.6s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="0%;200%" dur="3.6s" repeatCount="indefinite"/>
     </linearGradient>
   </defs>
   <style>
@@ -43,11 +45,13 @@
 
   <!-- Card Base -->
   <rect x="0.5" y="0.5" width="409" height="189" rx="12" fill="url(#evm-bg)" stroke="#30363d"/>
-  <path d="M 12 1 L 398 1" stroke="url(#top-shine-evm)" stroke-width="1.5" stroke-linecap="round"/>
+  
+  <!-- Top Animated Laser -->
+  <path d="M 12 1 L 398 1" stroke="url(#evm-laser)" stroke-width="2" stroke-linecap="round"/>
 
   <!-- Category Badge -->
   <g transform="translate(24, 22)">
-    <rect x="0" y="0" width="130" height="20" rx="10" fill="rgba(188, 140, 255, 0.1)" stroke="rgba(188, 140, 255, 0.25)" stroke-width="1"/>
+    <rect x="0" y="0" width="130" height="20" rx="10" fill="rgba(188, 140, 255, 0.1)" stroke="rgba(188, 140, 255, 0.3)" stroke-width="1"/>
     <text x="10" y="13.5" class="cat-label">WEB · NEXT.JS</text>
   </g>
 
@@ -60,10 +64,10 @@
   
   <!-- Tech Chips -->
   <g transform="translate(0, 146)">
-    <rect x="24" y="0" width="72" height="24" rx="12" fill="rgba(56, 139, 253, 0.12)" stroke="rgba(56, 139, 253, 0.3)"/>
+    <rect x="24" y="0" width="72" height="24" rx="12" fill="rgba(56, 139, 253, 0.12)" stroke="rgba(56, 139, 253, 0.35)"/>
     <text x="60" y="16" text-anchor="middle" class="chip-text">Next.js</text>
     
-    <rect x="104" y="0" width="94" height="24" rx="12" fill="rgba(56, 139, 253, 0.12)" stroke="rgba(56, 139, 253, 0.3)"/>
+    <rect x="104" y="0" width="94" height="24" rx="12" fill="rgba(56, 139, 253, 0.12)" stroke="rgba(56, 139, 253, 0.35)"/>
     <text x="151" y="16" text-anchor="middle" class="chip-text">TypeScript</text>
   </g>
 </svg>
