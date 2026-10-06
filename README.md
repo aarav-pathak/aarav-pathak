@@ -13,29 +13,25 @@
   <img src="assets/section-selected-work.svg" width="830" alt="Selected Work" />
 </p>
 
-<table width="100%">
+<table align="center" border="0" cellpadding="0" cellspacing="8">
   <tr>
-    <td width="50%" align="center" valign="top">
-      <a href="https://filterminds.com"><img src="assets/card-filter-minds.svg" width="100%" alt="Filter Minds - Research-first platform" /></a>
-      <br />
-      <sub><a href="https://filterminds.com">Live</a> · <a href="TODO_URL">GitHub</a></sub>
+    <td align="center" valign="top">
+      <a href="https://filterminds.com"><img src="assets/card-filter-minds.svg" width="405" alt="Filter Minds - Research-first platform" /></a><br />
+      <sub><a href="https://filterminds.com">Website</a> &nbsp;·&nbsp; <a href="TODO_URL">GitHub</a></sub>
     </td>
-    <td width="50%" align="center" valign="top">
-      <a href="TODO_URL"><img src="assets/card-closest.svg" width="100%" alt="Closest - Server-rendered application" /></a>
-      <br />
-      <sub><a href="TODO_URL">Live</a> · <a href="TODO_URL">GitHub</a></sub>
+    <td align="center" valign="top">
+      <a href="TODO_URL"><img src="assets/card-closest.svg" width="405" alt="Closest - Server-rendered application" /></a><br />
+      <sub><a href="TODO_URL">Live</a> &nbsp;·&nbsp; <a href="TODO_URL">GitHub</a></sub>
     </td>
   </tr>
   <tr>
-    <td width="50%" align="center" valign="top">
-      <a href="TODO_URL"><img src="assets/card-krishi-vaani.svg" width="100%" alt="Krishi Vaani - Agricultural workflows" /></a>
-      <br />
-      <sub><a href="TODO_URL">Live</a> · <a href="TODO_URL">GitHub</a></sub>
+    <td align="center" valign="top">
+      <a href="TODO_URL"><img src="assets/card-krishi-vaani.svg" width="405" alt="Krishi Vaani - Agricultural workflows" /></a><br />
+      <sub><a href="TODO_URL">Live</a> &nbsp;·&nbsp; <a href="TODO_URL">GitHub</a></sub>
     </td>
-    <td width="50%" align="center" valign="top">
-      <a href="TODO_URL"><img src="assets/card-evm.svg" width="100%" alt="EVM - Web experience and interface" /></a>
-      <br />
-      <sub><a href="TODO_URL">Live</a> · <a href="TODO_URL">GitHub</a></sub>
+    <td align="center" valign="top">
+      <a href="TODO_URL"><img src="assets/card-evm.svg" width="405" alt="EVM - Web experience and interface" /></a><br />
+      <sub><a href="TODO_URL">Live</a> &nbsp;·&nbsp; <a href="TODO_URL">GitHub</a></sub>
     </td>
   </tr>
 </table>
@@ -54,13 +50,8 @@
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=aarav-pathak&show_icons=true&hide_border=true&include_all_commits=true&rank_icon=github&bg_color=0d1117&title_color=58a6ff&text_color=e6edf3&icon_color=58a6ff&border_radius=12" height="170" alt="GitHub Stats" />
+  &nbsp;
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=aarav-pathak&layout=compact&hide_border=true&langs_count=8&bg_color=0d1117&title_color=58a6ff&text_color=e6edf3&icon_color=58a6ff&border_radius=12" height="170" alt="Top Languages" />
-</p>
-
-<p align="center">
-  <a href="https://github.com/aarav-pathak">
-    <img src="https://github-readme-activity-graph.vercel.app/graph?username=aarav-pathak&bg_color=0d1117&color=8b949e&line=58a6ff&point=58a6ff&area_color=1f6feb&area=true&hide_border=true&hide_title=true&radius=10&height=320&days=35&grid=false" width="100%" alt="Aarav Pathak GitHub Activity Graph" />
-  </a>
 </p>
 
 <p align="center">

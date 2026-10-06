@@ -1,19 +1,22 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 40" width="830" height="40" fill="none">
   <title>GitHub Section Header</title>
-  <desc>Section header for GitHub</desc>
+  <defs>
+    <linearGradient id="line-gh" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.6"/>
+      <stop offset="40%" stop-color="#30363d" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#21262d" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
   <style>
-    :root {
-      --border-subtle: #21262d;
-      --text-muted: #7d8590;
-      --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
-    }
-    @media (prefers-color-scheme: light) {
-      :root {
-        --border-subtle: #d8dee4;
-        --text-muted: #656d76;
-      }
+    .section-label {
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 2.4px;
+      fill: #58a6ff;
     }
   </style>
-  <text x="0" y="24" font-family="var(--font-mono)" font-size="11" font-weight="500" letter-spacing="2.4" fill="var(--text-muted)">GITHUB</text>
-  <line x1="75" y1="20" x2="830" y2="20" stroke="var(--border-subtle)" stroke-width="1"/>
+  <circle cx="5" cy="20" r="2.5" fill="#58a6ff"/>
+  <text x="16" y="24" class="section-label">GITHUB</text>
+  <line x1="90" y1="20" x2="830" y2="20" stroke="url(#line-gh)" stroke-width="1"/>
 </svg>

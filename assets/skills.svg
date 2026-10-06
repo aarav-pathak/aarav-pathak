@@ -1,90 +1,111 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 150" width="830" height="150" fill="none">
-  <title>Engineering Skills</title>
-  <desc>Overview of programming languages, web frameworks, and backend data infrastructure skills</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 175" width="830" height="175" fill="none">
+  <title>Engineering Skills Overview</title>
+  <defs>
+    <linearGradient id="col-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141a23"/>
+      <stop offset="100%" stop-color="#0d1117"/>
+    </linearGradient>
+    <linearGradient id="col1-top" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#30363d" stop-opacity="0.2"/>
+    </linearGradient>
+    <linearGradient id="col2-top" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3fb950" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#30363d" stop-opacity="0.2"/>
+    </linearGradient>
+    <linearGradient id="col3-top" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d29922" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#30363d" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+
   <style>
-    :root {
-      --bg: #0d1117;
-      --surface: #161b22;
-      --surface-2: #1c2128;
-      --border: #30363d;
-      --border-subtle: #21262d;
-      --text: #e6edf3;
-      --text-muted: #7d8590;
-      --accent: #58a6ff;
-      --accent-soft: rgba(88, 166, 255, 0.12);
-      --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-      --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+    .col-title {
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 2px;
     }
-    @media (prefers-color-scheme: light) {
-      :root {
-        --bg: #ffffff;
-        --surface: #f6f8fa;
-        --surface-2: #eaeef2;
-        --border: #d0d7de;
-        --border-subtle: #d8dee4;
-        --text: #1f2328;
-        --text-muted: #656d76;
-        --accent: #0969da;
-        --accent-soft: rgba(9, 105, 218, 0.10);
-      }
+    .chip-bg {
+      fill: rgba(56, 139, 253, 0.09);
+      stroke: rgba(56, 139, 253, 0.28);
+      stroke-width: 1;
+    }
+    .chip-text {
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+      font-size: 11px;
+      font-weight: 500;
+      fill: #e6edf3;
     }
   </style>
 
   <!-- Column 1: Languages -->
-  <g>
-    <text x="0" y="24" font-family="var(--font-mono)" font-size="11" font-weight="500" letter-spacing="2.4" fill="var(--text-muted)">LANGUAGES</text>
+  <g transform="translate(0, 0)">
+    <rect x="0.5" y="0.5" width="261" height="174" rx="12" fill="url(#col-bg)" stroke="#30363d"/>
+    <path d="M 12 1 L 250 1" stroke="url(#col1-top)" stroke-width="1.5" stroke-linecap="round"/>
+    
+    <circle cx="20" cy="28" r="3" fill="#58a6ff"/>
+    <text x="30" y="32" class="col-title" fill="#58a6ff">LANGUAGES</text>
     
     <!-- Row 1 -->
-    <rect x="0" y="46" width="44" height="24" rx="12" fill="var(--accent-soft)" stroke="var(--border-subtle)"/>
-    <text x="22" y="62" text-anchor="middle" font-family="var(--font-mono)" font-size="11" font-weight="500" fill="var(--accent)">C++</text>
+    <rect x="18" y="52" width="46" height="24" rx="12" class="chip-bg"/>
+    <text x="41" y="68" text-anchor="middle" class="chip-text">C++</text>
     
-    <rect x="52" y="46" width="64" height="24" rx="12" fill="var(--accent-soft)" stroke="var(--border-subtle)"/>
-    <text x="84" y="62" text-anchor="middle" font-family="var(--font-mono)" font-size="11" font-weight="500" fill="var(--accent)">Python</text>
+    <rect x="70" y="52" width="68" height="24" rx="12" class="chip-bg"/>
+    <text x="104" y="68" text-anchor="middle" class="chip-text">Python</text>
     
-    <rect x="124" y="46" width="90" height="24" rx="12" fill="var(--accent-soft)" stroke="var(--border-subtle)"/>
-    <text x="169" y="62" text-anchor="middle" font-family="var(--font-mono)" font-size="11" font-weight="500" fill="var(--accent)">JavaScript</text>
+    <rect x="144" y="52" width="98" height="24" rx="12" class="chip-bg"/>
+    <text x="193" y="68" text-anchor="middle" class="chip-text">JavaScript</text>
     
     <!-- Row 2 -->
-    <rect x="0" y="78" width="90" height="24" rx="12" fill="var(--accent-soft)" stroke="var(--border-subtle)"/>
-    <text x="45" y="94" text-anchor="middle" font-family="var(--font-mono)" font-size="11" font-weight="500" fill="var(--accent)">TypeScript</text>
+    <rect x="18" y="86" width="98" height="24" rx="12" class="chip-bg"/>
+    <text x="67" y="102" text-anchor="middle" class="chip-text">TypeScript</text>
   </g>
 
   <!-- Column 2: Web & Backend -->
-  <g>
-    <text x="290" y="24" font-family="var(--font-mono)" font-size="11" font-weight="500" letter-spacing="2.4" fill="var(--text-muted)">WEB &amp; BACKEND</text>
+  <g transform="translate(284, 0)">
+    <rect x="0.5" y="0.5" width="261" height="174" rx="12" fill="url(#col-bg)" stroke="#30363d"/>
+    <path d="M 12 1 L 250 1" stroke="url(#col2-top)" stroke-width="1.5" stroke-linecap="round"/>
+    
+    <circle cx="20" cy="28" r="3" fill="#3fb950"/>
+    <text x="30" y="32" class="col-title" fill="#3fb950">WEB &amp; BACKEND</text>
     
     <!-- Row 1 -->
-    <rect x="290" y="46" width="70" height="24" rx="12" fill="var(--accent-soft)" stroke="var(--border-subtle)"/>
-    <text x="325" y="62" text-anchor="middle" font-family="var(--font-mono)" font-size="11" font-weight="500" fill="var(--accent)">Node.js</text>
+    <rect x="18" y="52" width="74" height="24" rx="12" class="chip-bg"/>
+    <text x="55" y="68" text-anchor="middle" class="chip-text">Node.js</text>
     
-    <rect x="368" y="46" width="70" height="24" rx="12" fill="var(--accent-soft)" stroke="var(--border-subtle)"/>
-    <text x="403" y="62" text-anchor="middle" font-family="var(--font-mono)" font-size="11" font-weight="500" fill="var(--accent)">Express</text>
+    <rect x="98" y="52" width="74" height="24" rx="12" class="chip-bg"/>
+    <text x="135" y="68" text-anchor="middle" class="chip-text">Express</text>
     
     <!-- Row 2 -->
-    <rect x="290" y="78" width="130" height="24" rx="12" fill="var(--accent-soft)" stroke="var(--border-subtle)"/>
-    <text x="355" y="94" text-anchor="middle" font-family="var(--font-mono)" font-size="11" font-weight="500" fill="var(--accent)">React / Next.js</text>
+    <rect x="18" y="86" width="128" height="24" rx="12" class="chip-bg"/>
+    <text x="82" y="102" text-anchor="middle" class="chip-text">React / Next.js</text>
     
     <!-- Row 3 -->
-    <rect x="290" y="110" width="116" height="24" rx="12" fill="var(--accent-soft)" stroke="var(--border-subtle)"/>
-    <text x="348" y="126" text-anchor="middle" font-family="var(--font-mono)" font-size="11" font-weight="500" fill="var(--accent)">Authentication</text>
+    <rect x="18" y="120" width="120" height="24" rx="12" class="chip-bg"/>
+    <text x="78" y="136" text-anchor="middle" class="chip-text">Authentication</text>
   </g>
 
   <!-- Column 3: Data & Infrastructure -->
-  <g>
-    <text x="580" y="24" font-family="var(--font-mono)" font-size="11" font-weight="500" letter-spacing="2.4" fill="var(--text-muted)">DATA &amp; INFRASTRUCTURE</text>
+  <g transform="translate(568, 0)">
+    <rect x="0.5" y="0.5" width="261" height="174" rx="12" fill="url(#col-bg)" stroke="#30363d"/>
+    <path d="M 12 1 L 250 1" stroke="url(#col3-top)" stroke-width="1.5" stroke-linecap="round"/>
+    
+    <circle cx="20" cy="28" r="3" fill="#d29922"/>
+    <text x="30" y="32" class="col-title" fill="#d29922">DATA &amp; INFRA</text>
     
     <!-- Row 1 -->
-    <rect x="580" y="46" width="70" height="24" rx="12" fill="var(--accent-soft)" stroke="var(--border-subtle)"/>
-    <text x="615" y="62" text-anchor="middle" font-family="var(--font-mono)" font-size="11" font-weight="500" fill="var(--accent)">MongoDB</text>
+    <rect x="18" y="52" width="80" height="24" rx="12" class="chip-bg"/>
+    <text x="58" y="68" text-anchor="middle" class="chip-text">MongoDB</text>
     
-    <rect x="658" y="46" width="77" height="24" rx="12" fill="var(--accent-soft)" stroke="var(--border-subtle)"/>
-    <text x="696.5" y="62" text-anchor="middle" font-family="var(--font-mono)" font-size="11" font-weight="500" fill="var(--accent)">Supabase</text>
-    
-    <rect x="743" y="46" width="84" height="24" rx="12" fill="var(--accent-soft)" stroke="var(--border-subtle)"/>
-    <text x="785" y="62" text-anchor="middle" font-family="var(--font-mono)" font-size="11" font-weight="500" fill="var(--accent)">REST APIs</text>
+    <rect x="104" y="52" width="84" height="24" rx="12" class="chip-bg"/>
+    <text x="146" y="68" text-anchor="middle" class="chip-text">Supabase</text>
     
     <!-- Row 2 -->
-    <rect x="580" y="78" width="103" height="24" rx="12" fill="var(--accent-soft)" stroke="var(--border-subtle)"/>
-    <text x="631.5" y="94" text-anchor="middle" font-family="var(--font-mono)" font-size="11" font-weight="500" fill="var(--accent)">Git / GitHub</text>
+    <rect x="18" y="86" width="88" height="24" rx="12" class="chip-bg"/>
+    <text x="62" y="102" text-anchor="middle" class="chip-text">REST APIs</text>
+    
+    <rect x="112" y="86" width="108" height="24" rx="12" class="chip-bg"/>
+    <text x="166" y="102" text-anchor="middle" class="chip-text">Git / GitHub</text>
   </g>
 </svg>

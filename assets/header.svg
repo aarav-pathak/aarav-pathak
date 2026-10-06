@@ -1,67 +1,150 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 260" width="830" height="260" fill="none">
   <title>Aarav Pathak - Profile Header</title>
-  <desc>Header banner with name, title, and concise introduction</desc>
+  <desc>Header banner with name, title, animated glowing accents, and smooth transitions</desc>
   <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="card-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0e131b"/>
+      <stop offset="50%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#121820"/>
+    </linearGradient>
+
+    <!-- Border Gradient -->
+    <linearGradient id="border-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#30363d"/>
+      <stop offset="30%" stop-color="#58a6ff"/>
+      <stop offset="70%" stop-color="#bc8cff"/>
+      <stop offset="100%" stop-color="#30363d"/>
+    </linearGradient>
+
+    <!-- Name Text Gradient -->
+    <linearGradient id="name-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="40%" stop-color="#e6edf3"/>
+      <stop offset="80%" stop-color="#79c0ff"/>
+      <stop offset="100%" stop-color="#58a6ff"/>
+    </linearGradient>
+
+    <!-- Accent Line Gradient -->
+    <linearGradient id="accent-shimmer" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1f6feb"/>
+      <stop offset="50%" stop-color="#58a6ff"/>
+      <stop offset="100%" stop-color="#a371f7"/>
+      <animate attributeName="x1" values="-100%;100%" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="0%;200%" dur="4s" repeatCount="indefinite"/>
+    </linearGradient>
+
+    <!-- Glowing Orb Gradient -->
+    <radialGradient id="glow-orb" cx="80%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.18"/>
+      <stop offset="50%" stop-color="#1f6feb" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#0d1117" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Dot Pattern -->
     <pattern id="dot-grid" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-      <circle cx="12" cy="12" r="1" fill="var(--border-subtle)" opacity="0.6"/>
+      <circle cx="12" cy="12" r="1" fill="#30363d" opacity="0.6"/>
     </pattern>
-    <linearGradient id="fade-grad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.8"/>
-      <stop offset="55%" stop-color="#ffffff" stop-opacity="0.3"/>
+
+    <linearGradient id="grid-fade" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.85"/>
+      <stop offset="60%" stop-color="#ffffff" stop-opacity="0.3"/>
       <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
     </linearGradient>
+
     <mask id="grid-mask">
-      <rect x="0" y="0" width="830" height="260" rx="12" fill="url(#fade-grad)"/>
+      <rect x="0" y="0" width="830" height="260" rx="12" fill="url(#grid-fade)"/>
     </mask>
+
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
   </defs>
+
   <style>
-    :root {
-      --bg: #0d1117;
-      --surface: #161b22;
-      --surface-2: #1c2128;
-      --border: #30363d;
-      --border-subtle: #21262d;
-      --text: #e6edf3;
-      --text-muted: #7d8590;
-      --accent: #58a6ff;
-      --accent-soft: rgba(88, 166, 255, 0.12);
-      --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-      --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+    @keyframes pulseDot {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.85); }
     }
-    @media (prefers-color-scheme: light) {
-      :root {
-        --bg: #ffffff;
-        --surface: #f6f8fa;
-        --surface-2: #eaeef2;
-        --border: #d0d7de;
-        --border-subtle: #d8dee4;
-        --text: #1f2328;
-        --text-muted: #656d76;
-        --accent: #0969da;
-        --accent-soft: rgba(9, 105, 218, 0.10);
-      }
-    }
-    @media (prefers-reduced-motion: no-preference) {
-      .header-container {
-        animation: fadeIn 0.6s ease-out forwards;
-      }
+    @keyframes smoothFloat {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-3px); }
     }
     @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
+      0% { opacity: 0; transform: translateY(6px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    .pulse-dot {
+      animation: pulseDot 2.4s ease-in-out infinite;
+      transform-origin: 46px 48px;
+    }
+    .fade-content {
+      animation: fadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+    .badge-text {
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 2.2px;
+      fill: #7d8590;
+    }
+    .name-text {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 42px;
+      font-weight: 700;
+      letter-spacing: -1.2px;
+      fill: url(#name-grad);
+    }
+    .subtitle-text {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 15px;
+      font-weight: 500;
+      fill: #7d8590;
+    }
+    .bio-text {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 13.5px;
+      font-weight: 400;
+      fill: #8b949e;
+      line-height: 20px;
     }
   </style>
-  <g class="header-container">
-    <rect x="0.5" y="0.5" width="829" height="259" rx="12" fill="var(--bg)" stroke="var(--border-subtle)"/>
-    <rect x="0" y="0" width="830" height="260" rx="12" fill="url(#dot-grid)" mask="url(#grid-mask)"/>
+
+  <g class="fade-content">
+    <!-- Card Base & Border -->
+    <rect x="0.5" y="0.5" width="829" height="259" rx="12" fill="url(#card-bg)" stroke="#30363d" stroke-width="1"/>
     
-    <text x="40" y="56" font-family="var(--font-mono)" font-size="11" font-weight="500" letter-spacing="2.4" fill="var(--text-muted)">FOUNDER · FILTER MINDS</text>
-    <text x="40" y="112" font-family="var(--font-sans)" font-size="44" font-weight="600" letter-spacing="-1.2" fill="var(--text)">Aarav Pathak</text>
-    <text x="40" y="148" font-family="var(--font-sans)" font-size="16" font-weight="400" fill="var(--text-muted)">Software Developer · Product Builder · Competitive Programmer</text>
-    <text x="40" y="180" font-family="var(--font-sans)" font-size="14" font-weight="400" fill="var(--text-muted)">
+    <!-- Top accent border line -->
+    <path d="M 12 1 L 818 1" stroke="url(#border-grad)" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Ambient Glow Orb -->
+    <rect x="400" y="0" width="430" height="260" rx="12" fill="url(#glow-orb)"/>
+
+    <!-- Dot Grid Pattern -->
+    <rect x="0" y="0" width="830" height="260" rx="12" fill="url(#dot-grid)" mask="url(#grid-mask)"/>
+
+    <!-- Status Beacon / Badge -->
+    <g transform="translate(40, 38)">
+      <rect x="0" y="0" width="220" height="22" rx="11" fill="rgba(88, 166, 255, 0.08)" stroke="#21262d" stroke-width="1"/>
+      <circle cx="12" cy="11" r="3.5" fill="#3fb950" class="pulse-dot" filter="url(#glow)"/>
+      <circle cx="12" cy="11" r="2" fill="#7ee787"/>
+      <text x="24" y="14.5" class="badge-text">FOUNDER · FILTER MINDS</text>
+    </g>
+
+    <!-- Name & Subtitle -->
+    <text x="40" y="112" class="name-text">Aarav Pathak</text>
+    <text x="40" y="146" class="subtitle-text">Software Developer · Product Builder · Competitive Programmer</text>
+
+    <!-- Bio Description -->
+    <text x="40" y="178" class="bio-text">
       <tspan x="40" dy="0">I build products, web systems and technical experiments across</tspan>
       <tspan x="40" dy="20">full-stack engineering, AI and problem solving.</tspan>
     </text>
-    <rect x="40" y="220" width="48" height="2" rx="1" fill="var(--accent)"/>
+
+    <!-- Shimmering Accent Bar -->
+    <rect x="40" y="222" width="60" height="3" rx="1.5" fill="url(#accent-shimmer)"/>
+    <rect x="106" y="222" width="12" height="3" rx="1.5" fill="#30363d"/>
+    <rect x="122" y="222" width="6" height="3" rx="1.5" fill="#21262d"/>
   </g>
 </svg>

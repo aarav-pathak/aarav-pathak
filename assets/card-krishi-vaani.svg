@@ -1,52 +1,72 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 410 190" width="410" height="190" fill="none">
   <title>Krishi Vaani Project Card</title>
-  <desc>Card detailing Krishi Vaani project, description, and technologies</desc>
+  <defs>
+    <linearGradient id="kv-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141a23"/>
+      <stop offset="100%" stop-color="#0d1117"/>
+    </linearGradient>
+    <linearGradient id="top-shine-kv" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d29922" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#30363d" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#30363d" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
   <style>
-    :root {
-      --bg: #0d1117;
-      --surface: #161b22;
-      --surface-2: #1c2128;
-      --border: #30363d;
-      --border-subtle: #21262d;
-      --text: #e6edf3;
-      --text-muted: #7d8590;
-      --accent: #58a6ff;
-      --accent-soft: rgba(88, 166, 255, 0.12);
-      --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-      --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+    .cat-label {
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 1.8px;
+      fill: #d29922;
     }
-    @media (prefers-color-scheme: light) {
-      :root {
-        --bg: #ffffff;
-        --surface: #f6f8fa;
-        --surface-2: #eaeef2;
-        --border: #d0d7de;
-        --border-subtle: #d8dee4;
-        --text: #1f2328;
-        --text-muted: #656d76;
-        --accent: #0969da;
-        --accent-soft: rgba(9, 105, 218, 0.10);
-      }
+    .card-title {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: -0.2px;
+      fill: #ffffff;
+    }
+    .card-desc {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 13px;
+      font-weight: 400;
+      fill: #8b949e;
+      line-height: 19px;
+    }
+    .chip-text {
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+      font-size: 11px;
+      font-weight: 500;
+      fill: #79c0ff;
     }
   </style>
-  <rect x="0.5" y="0.5" width="409" height="189" rx="12" fill="var(--surface)" stroke="var(--border)"/>
-  
-  <text x="24" y="36" font-family="var(--font-mono)" font-size="11" font-weight="500" letter-spacing="2" fill="var(--text-muted)">WEB · AGRICULTURE · NEXT.JS</text>
-  <text x="24" y="70" font-family="var(--font-sans)" font-size="18" font-weight="600" letter-spacing="-0.2" fill="var(--text)">Krishi Vaani</text>
-  <text x="24" y="98" font-family="var(--font-sans)" font-size="13" font-weight="400" fill="var(--text-muted)">
+
+  <!-- Card Base -->
+  <rect x="0.5" y="0.5" width="409" height="189" rx="12" fill="url(#kv-bg)" stroke="#30363d"/>
+  <path d="M 12 1 L 398 1" stroke="url(#top-shine-kv)" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Category Badge -->
+  <g transform="translate(24, 22)">
+    <rect x="0" y="0" width="205" height="20" rx="10" fill="rgba(210, 153, 34, 0.1)" stroke="rgba(210, 153, 34, 0.25)" stroke-width="1"/>
+    <text x="10" y="13.5" class="cat-label">WEB · AGRICULTURE · NEXT.JS</text>
+  </g>
+
+  <!-- Title & Description -->
+  <text x="24" y="68" class="card-title">Krishi Vaani</text>
+  <text x="24" y="94" class="card-desc">
     <tspan x="24" dy="0">A web application exploring technology-driven workflows</tspan>
-    <tspan x="24" dy="20">for agriculture and information delivery.</tspan>
+    <tspan x="24" dy="19">for agriculture and information delivery.</tspan>
   </text>
   
-  <!-- Chips -->
-  <g>
-    <rect x="24" y="146" width="70" height="24" rx="12" fill="var(--accent-soft)" stroke="var(--border-subtle)"/>
-    <text x="59" y="162" text-anchor="middle" font-family="var(--font-mono)" font-size="11" font-weight="500" fill="var(--accent)">Next.js</text>
+  <!-- Tech Chips -->
+  <g transform="translate(0, 146)">
+    <rect x="24" y="0" width="72" height="24" rx="12" fill="rgba(56, 139, 253, 0.12)" stroke="rgba(56, 139, 253, 0.3)"/>
+    <text x="60" y="16" text-anchor="middle" class="chip-text">Next.js</text>
     
-    <rect x="102" y="146" width="90" height="24" rx="12" fill="var(--accent-soft)" stroke="var(--border-subtle)"/>
-    <text x="147" y="162" text-anchor="middle" font-family="var(--font-mono)" font-size="11" font-weight="500" fill="var(--accent)">TypeScript</text>
+    <rect x="104" y="0" width="94" height="24" rx="12" fill="rgba(56, 139, 253, 0.12)" stroke="rgba(56, 139, 253, 0.3)"/>
+    <text x="151" y="16" text-anchor="middle" class="chip-text">TypeScript</text>
     
-    <rect x="200" y="146" width="77" height="24" rx="12" fill="var(--accent-soft)" stroke="var(--border-subtle)"/>
-    <text x="238.5" y="162" text-anchor="middle" font-family="var(--font-mono)" font-size="11" font-weight="500" fill="var(--accent)">Tailwind</text>
+    <rect x="206" y="0" width="80" height="24" rx="12" fill="rgba(56, 139, 253, 0.12)" stroke="rgba(56, 139, 253, 0.3)"/>
+    <text x="246" y="16" text-anchor="middle" class="chip-text">Tailwind</text>
   </g>
 </svg>

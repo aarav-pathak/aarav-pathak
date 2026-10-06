@@ -1,18 +1,29 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 24" width="830" height="24" fill="none">
   <title>Divider</title>
-  <desc>Horizontal divider line with accent dot</desc>
+  <desc>Horizontal divider line with glowing pulsing accent</desc>
+  <defs>
+    <linearGradient id="line-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#21262d" stop-opacity="0"/>
+      <stop offset="25%" stop-color="#30363d" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#58a6ff" stop-opacity="1"/>
+      <stop offset="75%" stop-color="#30363d" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#21262d" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow-dot" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2"/>
+    </filter>
+  </defs>
   <style>
-    :root {
-      --border-subtle: #21262d;
-      --accent: #58a6ff;
+    @keyframes pulseGlow {
+      0%, 100% { transform: scale(1); opacity: 0.8; }
+      50% { transform: scale(1.4); opacity: 0.3; }
     }
-    @media (prefers-color-scheme: light) {
-      :root {
-        --border-subtle: #d8dee4;
-        --accent: #0969da;
-      }
+    .pulse-ring {
+      animation: pulseGlow 2.5s ease-in-out infinite;
+      transform-origin: 415px 12px;
     }
   </style>
-  <line x1="0" y1="12" x2="830" y2="12" stroke="var(--border-subtle)" stroke-width="1"/>
-  <circle cx="415" cy="12" r="2.5" fill="var(--accent)"/>
+  <line x1="0" y1="12" x2="830" y2="12" stroke="url(#line-grad)" stroke-width="1"/>
+  <circle cx="415" cy="12" r="5" fill="#58a6ff" opacity="0.4" class="pulse-ring" filter="url(#glow-dot)"/>
+  <circle cx="415" cy="12" r="2.5" fill="#58a6ff"/>
 </svg>

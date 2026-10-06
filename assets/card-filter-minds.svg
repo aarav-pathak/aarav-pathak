@@ -1,55 +1,82 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 410 190" width="410" height="190" fill="none">
   <title>Filter Minds Project Card</title>
-  <desc>Card detailing Filter Minds project, description, and roles</desc>
   <defs>
+    <linearGradient id="fm-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141a23"/>
+      <stop offset="100%" stop-color="#0d1117"/>
+    </linearGradient>
+    <linearGradient id="fm-accent-bar" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#79c0ff"/>
+      <stop offset="50%" stop-color="#1f6feb"/>
+      <stop offset="100%" stop-color="#58a6ff"/>
+    </linearGradient>
+    <linearGradient id="top-shine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#30363d" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#30363d" stop-opacity="0.1"/>
+    </linearGradient>
     <clipPath id="card-clip">
       <rect x="0" y="0" width="410" height="190" rx="12"/>
     </clipPath>
   </defs>
   <style>
-    :root {
-      --bg: #0d1117;
-      --surface: #161b22;
-      --surface-2: #1c2128;
-      --border: #30363d;
-      --border-subtle: #21262d;
-      --text: #e6edf3;
-      --text-muted: #7d8590;
-      --accent: #58a6ff;
-      --accent-soft: rgba(88, 166, 255, 0.12);
-      --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-      --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+    .cat-label {
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 1.8px;
+      fill: #58a6ff;
     }
-    @media (prefers-color-scheme: light) {
-      :root {
-        --bg: #ffffff;
-        --surface: #f6f8fa;
-        --surface-2: #eaeef2;
-        --border: #d0d7de;
-        --border-subtle: #d8dee4;
-        --text: #1f2328;
-        --text-muted: #656d76;
-        --accent: #0969da;
-        --accent-soft: rgba(9, 105, 218, 0.10);
-      }
+    .card-title {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: -0.2px;
+      fill: #ffffff;
+    }
+    .card-desc {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 13px;
+      font-weight: 400;
+      fill: #8b949e;
+      line-height: 19px;
+    }
+    .chip-text {
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+      font-size: 11px;
+      font-weight: 500;
+      fill: #79c0ff;
     }
   </style>
-  <rect x="0.5" y="0.5" width="409" height="189" rx="12" fill="var(--surface)" stroke="var(--border)"/>
-  <rect x="0" y="0" width="3" height="190" fill="var(--accent)" clip-path="url(#card-clip)"/>
+
+  <!-- Card Base -->
+  <rect x="0.5" y="0.5" width="409" height="189" rx="12" fill="url(#fm-bg)" stroke="#30363d"/>
   
-  <text x="24" y="36" font-family="var(--font-mono)" font-size="11" font-weight="500" letter-spacing="2" fill="var(--text-muted)">RESEARCH · IDEAS · PERSPECTIVE</text>
-  <text x="24" y="70" font-family="var(--font-sans)" font-size="18" font-weight="600" letter-spacing="-0.2" fill="var(--text)">Filter Minds</text>
-  <text x="24" y="98" font-family="var(--font-sans)" font-size="13" font-weight="400" fill="var(--text-muted)">
+  <!-- Left accent bar -->
+  <rect x="0" y="0" width="4" height="190" fill="url(#fm-accent-bar)" clip-path="url(#card-clip)"/>
+
+  <!-- Top shine -->
+  <path d="M 12 1 L 398 1" stroke="url(#top-shine)" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Category Badge -->
+  <g transform="translate(24, 22)">
+    <rect x="0" y="0" width="220" height="20" rx="10" fill="rgba(88, 166, 255, 0.1)" stroke="rgba(88, 166, 255, 0.25)" stroke-width="1"/>
+    <text x="10" y="13.5" class="cat-label">RESEARCH · IDEAS · PERSPECTIVE</text>
+  </g>
+
+  <!-- Title & Description -->
+  <text x="24" y="68" class="card-title">Filter Minds</text>
+  <text x="24" y="94" class="card-desc">
     <tspan x="24" dy="0">Building a research-first platform for questions, evidence,</tspan>
-    <tspan x="24" dy="20">expertise and high-signal discussion.</tspan>
+    <tspan x="24" dy="19">expertise and high-signal discussion.</tspan>
   </text>
   
-  <!-- Chips -->
-  <g>
-    <rect x="24" y="146" width="70" height="24" rx="12" fill="var(--accent-soft)" stroke="var(--border-subtle)"/>
-    <text x="59" y="162" text-anchor="middle" font-family="var(--font-mono)" font-size="11" font-weight="500" fill="var(--accent)">Founder</text>
+  <!-- Tech Chips -->
+  <g transform="translate(0, 146)">
+    <rect x="24" y="0" width="76" height="24" rx="12" fill="rgba(56, 139, 253, 0.12)" stroke="rgba(56, 139, 253, 0.3)"/>
+    <text x="62" y="16" text-anchor="middle" class="chip-text">Founder</text>
     
-    <rect x="102" y="146" width="84" height="24" rx="12" fill="var(--accent-soft)" stroke="var(--border-subtle)"/>
-    <text x="144" y="162" text-anchor="middle" font-family="var(--font-mono)" font-size="11" font-weight="500" fill="var(--accent)">Developer</text>
+    <rect x="108" y="0" width="90" height="24" rx="12" fill="rgba(56, 139, 253, 0.12)" stroke="rgba(56, 139, 253, 0.3)"/>
+    <text x="153" y="16" text-anchor="middle" class="chip-text">Developer</text>
   </g>
 </svg>
