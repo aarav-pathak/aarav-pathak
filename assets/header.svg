@@ -58,14 +58,14 @@
     <!-- typewriter clip 1 -->
     <clipPath id="tw1">
       <rect x="40" y="126" height="28" width="0">
-        <animate attributeName="width" values="0;600;600;0;0" keyTimes="0;0.38;0.48;0.50;1" dur="10s" repeatCount="indefinite"/>
+        <animate attributeName="width" values="0;540;540;0;0" keyTimes="0;0.38;0.48;0.50;1" dur="10s" repeatCount="indefinite"/>
       </rect>
     </clipPath>
 
     <!-- typewriter clip 2 -->
     <clipPath id="tw2">
       <rect x="40" y="126" height="28" width="0">
-        <animate attributeName="width" values="0;0;560;560;0" keyTimes="0;0.52;0.88;0.97;1" dur="10s" repeatCount="indefinite"/>
+        <animate attributeName="width" values="0;0;620;620;0" keyTimes="0;0.52;0.88;0.97;1" dur="10s" repeatCount="indefinite"/>
       </rect>
     </clipPath>
 
@@ -84,10 +84,6 @@
     @keyframes floatB {
       0%,100%{ transform:translateY(0) scale(1); opacity:.35; }
       50%{ transform:translateY(8px) scale(0.9); opacity:.7; }
-    }
-    @keyframes pulseDot {
-      0%,100%{ r:3.5; opacity:1; }
-      50%{ r:5.5; opacity:0; }
     }
     .fa{ animation:floatA 5s ease-in-out infinite; transform-origin:760px 55px; }
     .fb{ animation:floatB 4.2s ease-in-out infinite 1s; transform-origin:680px 200px; }
@@ -152,8 +148,8 @@
 
   <!-- blinking cursor -->
   <line stroke="#58a6ff" stroke-width="2" stroke-linecap="round" class="blink">
-    <animate attributeName="x1" values="40;600;600;40;40;555;555;40;40" keyTimes="0;0.38;0.48;0.50;0.52;0.88;0.97;1;1" dur="10s" repeatCount="indefinite"/>
-    <animate attributeName="x2" values="40;600;600;40;40;555;555;40;40" keyTimes="0;0.38;0.48;0.50;0.52;0.88;0.97;1;1" dur="10s" repeatCount="indefinite"/>
+    <animate attributeName="x1" values="40;540;540;40;40;620;620;40;40" keyTimes="0;0.38;0.48;0.50;0.52;0.88;0.97;1;1" dur="10s" repeatCount="indefinite"/>
+    <animate attributeName="x2" values="40;540;540;40;40;620;620;40;40" keyTimes="0;0.38;0.48;0.50;0.52;0.88;0.97;1;1" dur="10s" repeatCount="indefinite"/>
     <animate attributeName="y1" values="134;134;134;134;134;134;134;134;134" dur="10s" repeatCount="indefinite"/>
     <animate attributeName="y2" values="150;150;150;150;150;150;150;150;150" dur="10s" repeatCount="indefinite"/>
   </line>
