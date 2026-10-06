@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 410 190" width="410" height="190" fill="none">
+  <title>Closest Project Card</title>
+  <desc>Card detailing Closest project, description, and technologies</desc>
+  <style>
+    :root {
+      --bg: #0d1117;
+      --surface: #161b22;
+      --surface-2: #1c2128;
+      --border: #30363d;
+      --border-subtle: #21262d;
+      --text: #e6edf3;
+      --text-muted: #7d8590;
+      --accent: #58a6ff;
+      --accent-soft: rgba(88, 166, 255, 0.12);
+      --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #ffffff;
+        --surface: #f6f8fa;
+        --surface-2: #eaeef2;
+        --border: #d0d7de;
+        --border-subtle: #d8dee4;
+        --text: #1f2328;
+        --text-muted: #656d76;
+        --accent: #0969da;
+        --accent-soft: rgba(9, 105, 218, 0.10);
+      }
+    }
+  </style>
+  <rect x="0.5" y="0.5" width="409" height="189" rx="12" fill="var(--surface)" stroke="var(--border)"/>
+  
+  <text x="24" y="36" font-family="var(--font-mono)" font-size="11" font-weight="500" letter-spacing="2" fill="var(--text-muted)">FULL STACK · PRODUCT ENGINEERING</text>
+  <text x="24" y="70" font-family="var(--font-sans)" font-size="18" font-weight="600" letter-spacing="-0.2" fill="var(--text)">Closest</text>
+  <text x="24" y="98" font-family="var(--font-sans)" font-size="13" font-weight="400" fill="var(--text-muted)">
+    <tspan x="24" dy="0">A server-rendered application built around authentication,</tspan>
+    <tspan x="24" dy="20">sessions, search, filtering, pagination and persistent data.</tspan>
+  </text>
+  
+  <!-- Chips -->
+  <g>
+    <rect x="24" y="146" width="70" height="24" rx="12" fill="var(--accent-soft)" stroke="var(--border-subtle)"/>
+    <text x="59" y="162" text-anchor="middle" font-family="var(--font-mono)" font-size="11" font-weight="500" fill="var(--accent)">Node.js</text>
+    
+    <rect x="102" y="146" width="70" height="24" rx="12" fill="var(--accent-soft)" stroke="var(--border-subtle)"/>
+    <text x="137" y="162" text-anchor="middle" font-family="var(--font-mono)" font-size="11" font-weight="500" fill="var(--accent)">Express</text>
+    
+    <rect x="180" y="146" width="44" height="24" rx="12" fill="var(--accent-soft)" stroke="var(--border-subtle)"/>
+    <text x="202" y="162" text-anchor="middle" font-family="var(--font-mono)" font-size="11" font-weight="500" fill="var(--accent)">EJS</text>
+    
+    <rect x="232" y="146" width="70" height="24" rx="12" fill="var(--accent-soft)" stroke="var(--border-subtle)"/>
+    <text x="267" y="162" text-anchor="middle" font-family="var(--font-mono)" font-size="11" font-weight="500" fill="var(--accent)">MongoDB</text>
+  </g>
+</svg>

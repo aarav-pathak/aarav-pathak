@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 24" width="830" height="24" fill="none">
+  <title>Divider</title>
+  <desc>Horizontal divider line with accent dot</desc>
+  <style>
+    :root {
+      --border-subtle: #21262d;
+      --accent: #58a6ff;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --border-subtle: #d8dee4;
+        --accent: #0969da;
+      }
+    }
+  </style>
+  <line x1="0" y1="12" x2="830" y2="12" stroke="var(--border-subtle)" stroke-width="1"/>
+  <circle cx="415" cy="12" r="2.5" fill="var(--accent)"/>
+</svg>

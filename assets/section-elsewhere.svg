@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 40" width="830" height="40" fill="none">
+  <title>Elsewhere Section Header</title>
+  <desc>Section header for Elsewhere</desc>
+  <style>
+    :root {
+      --border-subtle: #21262d;
+      --text-muted: #7d8590;
+      --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --border-subtle: #d8dee4;
+        --text-muted: #656d76;
+      }
+    }
+  </style>
+  <text x="0" y="24" font-family="var(--font-mono)" font-size="11" font-weight="500" letter-spacing="2.4" fill="var(--text-muted)">ELSEWHERE</text>
+  <line x1="105" y1="20" x2="830" y2="20" stroke="var(--border-subtle)" stroke-width="1"/>
+</svg>

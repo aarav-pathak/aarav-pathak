@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 150" width="830" height="150" fill="none">
+  <title>Engineering Skills</title>
+  <desc>Overview of programming languages, web frameworks, and backend data infrastructure skills</desc>
+  <style>
+    :root {
+      --bg: #0d1117;
+      --surface: #161b22;
+      --surface-2: #1c2128;
+      --border: #30363d;
+      --border-subtle: #21262d;
+      --text: #e6edf3;
+      --text-muted: #7d8590;
+      --accent: #58a6ff;
+      --accent-soft: rgba(88, 166, 255, 0.12);
+      --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #ffffff;
+        --surface: #f6f8fa;
+        --surface-2: #eaeef2;
+        --border: #d0d7de;
+        --border-subtle: #d8dee4;
+        --text: #1f2328;
+        --text-muted: #656d76;
+        --accent: #0969da;
+        --accent-soft: rgba(9, 105, 218, 0.10);
+      }
+    }
+  </style>
+
+  <!-- Column 1: Languages -->
+  <g>
+    <text x="0" y="24" font-family="var(--font-mono)" font-size="11" font-weight="500" letter-spacing="2.4" fill="var(--text-muted)">LANGUAGES</text>
+    
+    <!-- Row 1 -->
+    <rect x="0" y="46" width="44" height="24" rx="12" fill="var(--accent-soft)" stroke="var(--border-subtle)"/>
+    <text x="22" y="62" text-anchor="middle" font-family="var(--font-mono)" font-size="11" font-weight="500" fill="var(--accent)">C++</text>
+    
+    <rect x="52" y="46" width="64" height="24" rx="12" fill="var(--accent-soft)" stroke="var(--border-subtle)"/>
+    <text x="84" y="62" text-anchor="middle" font-family="var(--font-mono)" font-size="11" font-weight="500" fill="var(--accent)">Python</text>
+    
+    <rect x="124" y="46" width="90" height="24" rx="12" fill="var(--accent-soft)" stroke="var(--border-subtle)"/>
+    <text x="169" y="62" text-anchor="middle" font-family="var(--font-mono)" font-size="11" font-weight="500" fill="var(--accent)">JavaScript</text>
+    
+    <!-- Row 2 -->
+    <rect x="0" y="78" width="90" height="24" rx="12" fill="var(--accent-soft)" stroke="var(--border-subtle)"/>
+    <text x="45" y="94" text-anchor="middle" font-family="var(--font-mono)" font-size="11" font-weight="500" fill="var(--accent)">TypeScript</text>
+  </g>
+
+  <!-- Column 2: Web & Backend -->
+  <g>
+    <text x="290" y="24" font-family="var(--font-mono)" font-size="11" font-weight="500" letter-spacing="2.4" fill="var(--text-muted)">WEB &amp; BACKEND</text>
+    
+    <!-- Row 1 -->
+    <rect x="290" y="46" width="70" height="24" rx="12" fill="var(--accent-soft)" stroke="var(--border-subtle)"/>
+    <text x="325" y="62" text-anchor="middle" font-family="var(--font-mono)" font-size="11" font-weight="500" fill="var(--accent)">Node.js</text>
+    
+    <rect x="368" y="46" width="70" height="24" rx="12" fill="var(--accent-soft)" stroke="var(--border-subtle)"/>
+    <text x="403" y="62" text-anchor="middle" font-family="var(--font-mono)" font-size="11" font-weight="500" fill="var(--accent)">Express</text>
+    
+    <!-- Row 2 -->
+    <rect x="290" y="78" width="130" height="24" rx="12" fill="var(--accent-soft)" stroke="var(--border-subtle)"/>
+    <text x="355" y="94" text-anchor="middle" font-family="var(--font-mono)" font-size="11" font-weight="500" fill="var(--accent)">React / Next.js</text>
+    
+    <!-- Row 3 -->
+    <rect x="290" y="110" width="116" height="24" rx="12" fill="var(--accent-soft)" stroke="var(--border-subtle)"/>
+    <text x="348" y="126" text-anchor="middle" font-family="var(--font-mono)" font-size="11" font-weight="500" fill="var(--accent)">Authentication</text>
+  </g>
+
+  <!-- Column 3: Data & Infrastructure -->
+  <g>
+    <text x="580" y="24" font-family="var(--font-mono)" font-size="11" font-weight="500" letter-spacing="2.4" fill="var(--text-muted)">DATA &amp; INFRASTRUCTURE</text>
+    
+    <!-- Row 1 -->
+    <rect x="580" y="46" width="70" height="24" rx="12" fill="var(--accent-soft)" stroke="var(--border-subtle)"/>
+    <text x="615" y="62" text-anchor="middle" font-family="var(--font-mono)" font-size="11" font-weight="500" fill="var(--accent)">MongoDB</text>
+    
+    <rect x="658" y="46" width="77" height="24" rx="12" fill="var(--accent-soft)" stroke="var(--border-subtle)"/>
+    <text x="696.5" y="62" text-anchor="middle" font-family="var(--font-mono)" font-size="11" font-weight="500" fill="var(--accent)">Supabase</text>
+    
+    <rect x="743" y="46" width="84" height="24" rx="12" fill="var(--accent-soft)" stroke="var(--border-subtle)"/>
+    <text x="785" y="62" text-anchor="middle" font-family="var(--font-mono)" font-size="11" font-weight="500" fill="var(--accent)">REST APIs</text>
+    
+    <!-- Row 2 -->
+    <rect x="580" y="78" width="103" height="24" rx="12" fill="var(--accent-soft)" stroke="var(--border-subtle)"/>
+    <text x="631.5" y="94" text-anchor="middle" font-family="var(--font-mono)" font-size="11" font-weight="500" fill="var(--accent)">Git / GitHub</text>
+  </g>
+</svg>
