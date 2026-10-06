@@ -108,8 +108,8 @@
 
 <br/>
 
-<!--- CONTRIBUTION & GITHUB ACTIVITY --->
-<img src="assets/section-activity.svg" alt="Contribution Activity" width="830"/>
+<!--- GITHUB ACTIVITY --->
+<img src="assets/section-github.svg" alt="GitHub Activity" width="830"/>
 
 <br/>
 
@@ -123,13 +123,21 @@
 
 <div align="center">
 
-<a href="https://github.com/aarav-pathak">
-  <img height="180" src="https://github-readme-stats.vercel.app/api?username=aarav-pathak&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=388bfd&text_color=7d8590&ring_color=388bfd&include_all_commits=true&count_private=true" alt="GitHub Stats"/>
-</a>
-&nbsp;&nbsp;
-<a href="https://github.com/aarav-pathak">
-  <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=aarav-pathak&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=7d8590&langs_count=7" alt="Top Languages"/>
-</a>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td align="center" width="56%">
+  <a href="https://github.com/aarav-pathak">
+    <img width="100%" src="https://github-readme-stats.vercel.app/api?username=aarav-pathak&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=388bfd&text_color=7d8590&ring_color=388bfd&include_all_commits=true&count_private=true" alt="GitHub Stats"/>
+  </a>
+</td>
+<td width="4%"></td>
+<td align="center" width="40%">
+  <a href="https://github.com/aarav-pathak">
+    <img width="100%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=aarav-pathak&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=7d8590&langs_count=7" alt="Top Languages"/>
+  </a>
+</td>
+</tr>
+</table>
 
 </div>
 
@@ -137,7 +145,7 @@
 
 <div align="center">
 <a href="https://github.com/aarav-pathak">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=aarav-pathak&theme=github-dark&hide_border=true&background=0d1117&ring=388bfd&fire=58a6ff&currStreakLabel=79c0ff" alt="GitHub Streak"/>
+  <img width="830" src="https://github-readme-streak-stats.herokuapp.com/?user=aarav-pathak&theme=github-dark&hide_border=true&background=0d1117&ring=388bfd&fire=58a6ff&currStreakLabel=79c0ff&sideNums=e6edf3&sideLabels=7d8590&dates=7d8590" alt="GitHub Streak"/>
 </a>
 </div>
 
