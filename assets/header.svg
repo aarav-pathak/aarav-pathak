@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 270" width="830" height="270" fill="none">
-  <title>Aarav Pathak - Animated Profile Header</title>
+  <title>Aarav Pathak - Profile Header</title>
   <defs>
     <!-- Background Gradient -->
     <linearGradient id="header-bg" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -64,22 +64,22 @@
       <feComposite in="SourceGraphic" in2="blur" operator="over"/>
     </filter>
 
-    <!-- Typewriter Phrase 1 Clip -->
+    <!-- Typewriter Phrase 1 Clip (Wide enough for full text) -->
     <clipPath id="type-phrase-1">
-      <rect x="40" y="130" height="30" width="0">
+      <rect x="40" y="128" height="32" width="0">
         <animate attributeName="width" 
-          values="0; 490; 490; 0; 0" 
+          values="0; 630; 630; 0; 0" 
           keyTimes="0; 0.35; 0.48; 0.50; 1" 
           dur="9s" 
           repeatCount="indefinite" />
       </rect>
     </clipPath>
 
-    <!-- Typewriter Phrase 2 Clip -->
+    <!-- Typewriter Phrase 2 Clip (Wide enough for full text) -->
     <clipPath id="type-phrase-2">
-      <rect x="40" y="130" height="30" width="0">
+      <rect x="40" y="128" height="32" width="0">
         <animate attributeName="width" 
-          values="0; 0; 430; 430; 0" 
+          values="0; 0; 630; 630; 0" 
           keyTimes="0; 0.50; 0.85; 0.98; 1" 
           dur="9s" 
           repeatCount="indefinite" />
@@ -128,7 +128,7 @@
       fill: url(#anim-name-grad);
     }
     .type-text {
-      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
       font-size: 15px;
       font-weight: 600;
       fill: #58a6ff;
@@ -172,12 +172,12 @@
   <!-- Name with Animated Color Flow -->
   <text x="40" y="112" class="title-name">Aarav Pathak</text>
 
-  <!-- Typewriter Phrase 1 -->
+  <!-- Typewriter Phrase 1: Full text without clipping -->
   <g clip-path="url(#type-phrase-1)">
     <text x="40" y="148" class="type-text">Software Developer · Product Builder · Competitive Programmer</text>
   </g>
 
-  <!-- Typewriter Phrase 2 (Cycles In) -->
+  <!-- Typewriter Phrase 2: Full text without clipping -->
   <g clip-path="url(#type-phrase-2)">
     <text x="40" y="148" class="type-text" fill="#79c0ff">Full Stack Engineering · AI Systems · Technical Problem Solving</text>
   </g>
@@ -185,12 +185,12 @@
   <!-- Dynamic Blinking / Moving Typing Cursor -->
   <line y1="134" y2="152" stroke="#79c0ff" stroke-width="2.5" stroke-linecap="round" filter="url(#neon-glow)">
     <animate attributeName="x1" 
-      values="40; 530; 530; 40; 40; 470; 470; 40; 40" 
+      values="40; 535; 535; 40; 40; 505; 505; 40; 40" 
       keyTimes="0; 0.35; 0.48; 0.50; 0.50; 0.85; 0.98; 1; 1" 
       dur="9s" 
       repeatCount="indefinite"/>
     <animate attributeName="x2" 
-      values="40; 530; 530; 40; 40; 470; 470; 40; 40" 
+      values="40; 535; 535; 40; 40; 505; 505; 40; 40" 
       keyTimes="0; 0.35; 0.48; 0.50; 0.50; 0.85; 0.98; 1; 1" 
       dur="9s" 
       repeatCount="indefinite"/>
