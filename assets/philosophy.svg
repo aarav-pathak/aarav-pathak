@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 110" width="830" height="110" fill="none">
-  <title>Engineering Principles</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 135" width="830" height="135" fill="none">
+  <title>Engineering Philosophy</title>
   <defs>
     <linearGradient id="pbg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#0d1117"/>
@@ -35,38 +35,46 @@
   </style>
 
   <!-- Frame -->
-  <rect x="0.5" y="0.5" width="829" height="109" rx="10" fill="url(#pbg)" stroke="#21262d" stroke-width="1"/>
+  <rect x="0.5" y="0.5" width="829" height="134" rx="10" fill="url(#pbg)" stroke="#21262d" stroke-width="1"/>
   <line x1="12" y1="1" x2="818" y2="1" stroke="url(#plaser)" stroke-width="1.2" stroke-linecap="round"/>
 
-  <!-- Header row inside card -->
+  <!-- Header row -->
   <circle cx="24" cy="22" r="3.5" fill="#bc8cff" class="pulse-dot-p"/>
   <circle cx="24" cy="22" r="2" fill="#d2a8ff"/>
   <text x="36" y="25.5" class="label-p">ENGINEERING PHILOSOPHY &amp; SYSTEM DESIGN</text>
 
   <line x1="20" y1="38" x2="810" y2="38" stroke="#21262d" stroke-width="0.75"/>
 
-  <!-- 3 Clean Minimal Columns -->
   <!-- Column 1 -->
   <g transform="translate(24, 52)">
     <text x="0" y="14" class="cell-title">High Signal Architecture</text>
-    <text x="0" y="32" class="cell-desc">Deterministic state, clean abstractions &amp; low latency</text>
+    <text class="cell-desc">
+      <tspan x="0" y="32">Deterministic state, clean</tspan>
+      <tspan x="0" y="48">abstractions &amp; low latency.</tspan>
+    </text>
   </g>
 
   <!-- Vertical Divider 1 -->
-  <line x1="285" y1="46" x2="285" y2="96" stroke="#21262d" stroke-width="0.75"/>
+  <line x1="275" y1="46" x2="275" y2="118" stroke="#21262d" stroke-width="0.75"/>
 
   <!-- Column 2 -->
-  <g transform="translate(305, 52)">
+  <g transform="translate(295, 52)">
     <text x="0" y="14" class="cell-title">Algorithmic Rigor</text>
-    <text x="0" y="32" class="cell-desc">Grounded in competitive programming &amp; complexity</text>
+    <text class="cell-desc">
+      <tspan x="0" y="32">Grounded in competitive</tspan>
+      <tspan x="0" y="48">programming &amp; complexity.</tspan>
+    </text>
   </g>
 
   <!-- Vertical Divider 2 -->
-  <line x1="565" y1="46" x2="565" y2="96" stroke="#21262d" stroke-width="0.75"/>
+  <line x1="550" y1="46" x2="550" y2="118" stroke="#21262d" stroke-width="0.75"/>
 
   <!-- Column 3 -->
-  <g transform="translate(585, 52)">
+  <g transform="translate(570, 52)">
     <text x="0" y="14" class="cell-title">Product Focus</text>
-    <text x="0" y="32" class="cell-desc">Shipping end-to-end usable tools with zero clutter</text>
+    <text class="cell-desc">
+      <tspan x="0" y="32">Shipping end-to-end usable</tspan>
+      <tspan x="0" y="48">tools with zero clutter.</tspan>
+    </text>
   </g>
 </svg>
