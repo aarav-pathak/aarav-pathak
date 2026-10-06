@@ -17,21 +17,21 @@
   <tr>
     <td align="center" valign="top">
       <a href="https://filterminds.com"><img src="assets/card-filter-minds.svg" width="405" alt="Filter Minds - Research-first platform" /></a><br />
-      <sub><a href="https://filterminds.com">Website</a> &nbsp;·&nbsp; <a href="TODO_URL">GitHub</a></sub>
+      <sub><a href="https://filterminds.com">Website (Live)</a> &nbsp;·&nbsp; <a href="TODO_URL">GitHub</a></sub>
     </td>
     <td align="center" valign="top">
-      <a href="TODO_URL"><img src="assets/card-closest.svg" width="405" alt="Closest - Server-rendered application" /></a><br />
-      <sub><a href="TODO_URL">Live</a> &nbsp;·&nbsp; <a href="TODO_URL">GitHub</a></sub>
+      <a href="https://closest.onrender.com"><img src="assets/card-closest.svg" width="405" alt="Closest - Server-rendered application" /></a><br />
+      <sub><a href="https://closest.onrender.com">Live Demo</a> &nbsp;·&nbsp; <a href="https://github.com/aarav-pathak/closest">GitHub</a></sub>
     </td>
   </tr>
   <tr>
     <td align="center" valign="top">
-      <a href="TODO_URL"><img src="assets/card-krishi-vaani.svg" width="405" alt="Krishi Vaani - Agricultural workflows" /></a><br />
-      <sub><a href="TODO_URL">Live</a> &nbsp;·&nbsp; <a href="TODO_URL">GitHub</a></sub>
+      <a href="https://github.com/aarav-pathak/krishi_vaani"><img src="assets/card-krishi-vaani.svg" width="405" alt="Krishi Vaani - Agricultural workflows" /></a><br />
+      <sub><a href="https://github.com/aarav-pathak/krishi_vaani">GitHub Repo</a></sub>
     </td>
     <td align="center" valign="top">
-      <a href="TODO_URL"><img src="assets/card-evm.svg" width="405" alt="EVM - Web experience and interface" /></a><br />
-      <sub><a href="TODO_URL">Live</a> &nbsp;·&nbsp; <a href="TODO_URL">GitHub</a></sub>
+      <a href="https://github.com/aarav-pathak/EVM"><img src="assets/card-evm.svg" width="405" alt="EVM - Web experience and interface" /></a><br />
+      <sub><a href="https://github.com/aarav-pathak/EVM">GitHub Repo</a></sub>
     </td>
   </tr>
 </table>

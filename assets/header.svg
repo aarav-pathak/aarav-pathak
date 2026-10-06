@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 260" width="830" height="260" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 270" width="830" height="270" fill="none">
   <title>Aarav Pathak - Profile Header</title>
-  <desc>Header banner with name, title, animated glowing accents, and smooth transitions</desc>
+  <desc>Header banner with animated typewriter effect, glowing gradient accents, and pulsing status</desc>
   <defs>
     <!-- Background Gradient -->
     <linearGradient id="card-bg" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -9,11 +9,12 @@
       <stop offset="100%" stop-color="#121820"/>
     </linearGradient>
 
-    <!-- Border Gradient -->
+    <!-- Top Glow Border -->
     <linearGradient id="border-grad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#30363d"/>
-      <stop offset="30%" stop-color="#58a6ff"/>
-      <stop offset="70%" stop-color="#bc8cff"/>
+      <stop offset="25%" stop-color="#58a6ff"/>
+      <stop offset="50%" stop-color="#79c0ff"/>
+      <stop offset="75%" stop-color="#bc8cff"/>
       <stop offset="100%" stop-color="#30363d"/>
     </linearGradient>
 
@@ -21,27 +22,27 @@
     <linearGradient id="name-grad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#ffffff"/>
       <stop offset="40%" stop-color="#e6edf3"/>
-      <stop offset="80%" stop-color="#79c0ff"/>
+      <stop offset="75%" stop-color="#79c0ff"/>
       <stop offset="100%" stop-color="#58a6ff"/>
     </linearGradient>
 
-    <!-- Accent Line Gradient -->
-    <linearGradient id="accent-shimmer" x1="0%" y1="0%" x2="100%" y2="0%">
+    <!-- Shimmer Bar Gradient -->
+    <linearGradient id="shimmer" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#1f6feb"/>
       <stop offset="50%" stop-color="#58a6ff"/>
-      <stop offset="100%" stop-color="#a371f7"/>
-      <animate attributeName="x1" values="-100%;100%" dur="4s" repeatCount="indefinite"/>
-      <animate attributeName="x2" values="0%;200%" dur="4s" repeatCount="indefinite"/>
+      <stop offset="100%" stop-color="#bc8cff"/>
+      <animate attributeName="x1" values="-100%;100%" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="0%;200%" dur="3s" repeatCount="indefinite"/>
     </linearGradient>
 
-    <!-- Glowing Orb Gradient -->
-    <radialGradient id="glow-orb" cx="80%" cy="20%" r="60%">
-      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.18"/>
-      <stop offset="50%" stop-color="#1f6feb" stop-opacity="0.06"/>
+    <!-- Ambient Glow Orb -->
+    <radialGradient id="glow-orb" cx="82%" cy="25%" r="55%">
+      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.22"/>
+      <stop offset="45%" stop-color="#1f6feb" stop-opacity="0.08"/>
       <stop offset="100%" stop-color="#0d1117" stop-opacity="0"/>
     </radialGradient>
 
-    <!-- Dot Pattern -->
+    <!-- Dot Grid Pattern -->
     <pattern id="dot-grid" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
       <circle cx="12" cy="12" r="1" fill="#30363d" opacity="0.6"/>
     </pattern>
@@ -53,39 +54,52 @@
     </linearGradient>
 
     <mask id="grid-mask">
-      <rect x="0" y="0" width="830" height="260" rx="12" fill="url(#grid-fade)"/>
+      <rect x="0" y="0" width="830" height="270" rx="12" fill="url(#grid-fade)"/>
     </mask>
 
     <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur stdDeviation="3" result="blur" />
       <feComposite in="SourceGraphic" in2="blur" operator="over"/>
     </filter>
+
+    <!-- Typewriter Clip Paths -->
+    <!-- Line 1: Software Developer · Product Builder · Competitive Programmer -->
+    <clipPath id="type-clip-1">
+      <rect x="40" y="130" width="0" height="30">
+        <animate attributeName="width" 
+          values="0; 0; 520; 520; 0" 
+          keyTimes="0; 0.05; 0.45; 0.90; 0.98" 
+          dur="7s" 
+          repeatCount="indefinite" />
+      </rect>
+    </clipPath>
   </defs>
 
   <style>
     @keyframes pulseDot {
       0%, 100% { opacity: 1; transform: scale(1); }
-      50% { opacity: 0.4; transform: scale(0.85); }
+      50% { opacity: 0.35; transform: scale(0.85); }
     }
-    @keyframes smoothFloat {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-3px); }
-    }
-    @keyframes fadeIn {
-      0% { opacity: 0; transform: translateY(6px); }
-      100% { opacity: 1; transform: translateY(0); }
+    @keyframes floatParticle {
+      0%, 100% { transform: translateY(0) scale(1); opacity: 0.4; }
+      50% { transform: translateY(-8px) scale(1.2); opacity: 0.9; }
     }
     .pulse-dot {
-      animation: pulseDot 2.4s ease-in-out infinite;
-      transform-origin: 46px 48px;
+      animation: pulseDot 2s ease-in-out infinite;
+      transform-origin: 52px 49px;
     }
-    .fade-content {
-      animation: fadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    .particle-1 {
+      animation: floatParticle 4s ease-in-out infinite;
+      transform-origin: 720px 70px;
+    }
+    .particle-2 {
+      animation: floatParticle 3.2s ease-in-out infinite 1s;
+      transform-origin: 640px 180px;
     }
     .badge-text {
       font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
       font-size: 11px;
-      font-weight: 500;
+      font-weight: 600;
       letter-spacing: 2.2px;
       fill: #7d8590;
     }
@@ -97,10 +111,10 @@
       fill: url(#name-grad);
     }
     .subtitle-text {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
       font-size: 15px;
-      font-weight: 500;
-      fill: #7d8590;
+      font-weight: 600;
+      fill: #58a6ff;
     }
     .bio-text {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
@@ -111,40 +125,65 @@
     }
   </style>
 
-  <g class="fade-content">
-    <!-- Card Base & Border -->
-    <rect x="0.5" y="0.5" width="829" height="259" rx="12" fill="url(#card-bg)" stroke="#30363d" stroke-width="1"/>
-    
-    <!-- Top accent border line -->
-    <path d="M 12 1 L 818 1" stroke="url(#border-grad)" stroke-width="2" stroke-linecap="round"/>
+  <!-- Card Background -->
+  <rect x="0.5" y="0.5" width="829" height="269" rx="12" fill="url(#card-bg)" stroke="#30363d" stroke-width="1"/>
+  
+  <!-- Glowing Top Border Accent -->
+  <path d="M 12 1 L 818 1" stroke="url(#border-grad)" stroke-width="2.5" stroke-linecap="round"/>
 
-    <!-- Ambient Glow Orb -->
-    <rect x="400" y="0" width="430" height="260" rx="12" fill="url(#glow-orb)"/>
+  <!-- Ambient Glow Orb -->
+  <rect x="380" y="0" width="450" height="270" rx="12" fill="url(#glow-orb)"/>
 
-    <!-- Dot Grid Pattern -->
-    <rect x="0" y="0" width="830" height="260" rx="12" fill="url(#dot-grid)" mask="url(#grid-mask)"/>
+  <!-- Animated Floating Particles -->
+  <circle cx="720" cy="70" r="3" fill="#58a6ff" class="particle-1" filter="url(#glow)"/>
+  <circle cx="640" cy="180" r="2.5" fill="#bc8cff" class="particle-2" filter="url(#glow)"/>
+  <circle cx="770" cy="150" r="2" fill="#79c0ff" opacity="0.6"/>
 
-    <!-- Status Beacon / Badge -->
-    <g transform="translate(40, 38)">
-      <rect x="0" y="0" width="220" height="22" rx="11" fill="rgba(88, 166, 255, 0.08)" stroke="#21262d" stroke-width="1"/>
-      <circle cx="12" cy="11" r="3.5" fill="#3fb950" class="pulse-dot" filter="url(#glow)"/>
-      <circle cx="12" cy="11" r="2" fill="#7ee787"/>
-      <text x="24" y="14.5" class="badge-text">FOUNDER · FILTER MINDS</text>
-    </g>
+  <!-- Dot Grid -->
+  <rect x="0" y="0" width="830" height="270" rx="12" fill="url(#dot-grid)" mask="url(#grid-mask)"/>
 
-    <!-- Name & Subtitle -->
-    <text x="40" y="112" class="name-text">Aarav Pathak</text>
-    <text x="40" y="146" class="subtitle-text">Software Developer · Product Builder · Competitive Programmer</text>
-
-    <!-- Bio Description -->
-    <text x="40" y="178" class="bio-text">
-      <tspan x="40" dy="0">I build products, web systems and technical experiments across</tspan>
-      <tspan x="40" dy="20">full-stack engineering, AI and problem solving.</tspan>
-    </text>
-
-    <!-- Shimmering Accent Bar -->
-    <rect x="40" y="222" width="60" height="3" rx="1.5" fill="url(#accent-shimmer)"/>
-    <rect x="106" y="222" width="12" height="3" rx="1.5" fill="#30363d"/>
-    <rect x="122" y="222" width="6" height="3" rx="1.5" fill="#21262d"/>
+  <!-- Status Beacon Badge -->
+  <g transform="translate(40, 38)">
+    <rect x="0" y="0" width="220" height="22" rx="11" fill="rgba(88, 166, 255, 0.08)" stroke="#21262d" stroke-width="1"/>
+    <circle cx="12" cy="11" r="3.5" fill="#3fb950" class="pulse-dot" filter="url(#glow)"/>
+    <circle cx="12" cy="11" r="2" fill="#7ee787"/>
+    <text x="24" y="14.5" class="badge-text">FOUNDER · FILTER MINDS</text>
   </g>
+
+  <!-- Name -->
+  <text x="40" y="112" class="name-text">Aarav Pathak</text>
+
+  <!-- Typewriter Subtitle with animated cursor -->
+  <g clip-path="url(#type-clip-1)">
+    <text x="40" y="148" class="subtitle-text">Software Developer · Product Builder · Competitive Programmer</text>
+  </g>
+
+  <!-- Animated Blinking / Moving Cursor -->
+  <line y1="135" y2="151" stroke="#58a6ff" stroke-width="2.5" stroke-linecap="round">
+    <animate attributeName="x1" 
+      values="40; 40; 560; 560; 40" 
+      keyTimes="0; 0.05; 0.45; 0.90; 0.98" 
+      dur="7s" 
+      repeatCount="indefinite"/>
+    <animate attributeName="x2" 
+      values="40; 40; 560; 560; 40" 
+      keyTimes="0; 0.05; 0.45; 0.90; 0.98" 
+      dur="7s" 
+      repeatCount="indefinite"/>
+    <animate attributeName="opacity" 
+      values="1;0;1;0;1;0;1;0" 
+      dur="0.8s" 
+      repeatCount="indefinite"/>
+  </line>
+
+  <!-- Bio Description -->
+  <text x="40" y="186" class="bio-text">
+    <tspan x="40" dy="0">I build products, web systems and technical experiments across</tspan>
+    <tspan x="40" dy="20">full-stack engineering, AI and problem solving.</tspan>
+  </text>
+
+  <!-- Animated Accent Bar -->
+  <rect x="40" y="232" width="60" height="3" rx="1.5" fill="url(#shimmer)"/>
+  <rect x="106" y="232" width="12" height="3" rx="1.5" fill="#30363d"/>
+  <rect x="122" y="232" width="6" height="3" rx="1.5" fill="#21262d"/>
 </svg>
