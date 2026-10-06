@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 410 190" width="410" height="190" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 410 185" width="410" height="185" fill="none">
   <title>Filter Minds Project Card</title>
   <defs>
     <linearGradient id="fm-bg" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -19,12 +19,8 @@
       <animate attributeName="y1" values="0%;100%;0%" dur="4s" repeatCount="indefinite"/>
     </linearGradient>
     <clipPath id="card-clip">
-      <rect x="0" y="0" width="410" height="190" rx="12"/>
+      <rect x="0" y="0" width="410" height="185" rx="12"/>
     </clipPath>
-    <filter id="glow-badge" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="2" result="blur"/>
-      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
-    </filter>
   </defs>
 
   <style>
@@ -58,29 +54,29 @@
   </style>
 
   <!-- Card Base -->
-  <rect x="0.5" y="0.5" width="409" height="189" rx="12" fill="url(#fm-bg)" stroke="#30363d"/>
+  <rect x="0.5" y="0.5" width="409" height="184" rx="12" fill="url(#fm-bg)" stroke="#30363d"/>
   
   <!-- Left Accent Bar -->
-  <rect x="0" y="0" width="4" height="190" fill="url(#fm-left-bar)" clip-path="url(#card-clip)"/>
+  <rect x="0" y="0" width="4" height="185" fill="url(#fm-left-bar)" clip-path="url(#card-clip)"/>
 
   <!-- Top Laser Flow -->
   <path d="M 12 1 L 398 1" stroke="url(#fm-laser)" stroke-width="2" stroke-linecap="round"/>
 
   <!-- Category Badge -->
-  <g transform="translate(24, 22)">
+  <g transform="translate(24, 20)">
     <rect x="0" y="0" width="220" height="20" rx="10" fill="rgba(88, 166, 255, 0.1)" stroke="rgba(88, 166, 255, 0.3)" stroke-width="1"/>
     <text x="10" y="13.5" class="cat-label">RESEARCH · IDEAS · PERSPECTIVE</text>
   </g>
 
   <!-- Title & Description -->
-  <text x="24" y="68" class="card-title">Filter Minds</text>
-  <text x="24" y="94" class="card-desc">
+  <text x="24" y="66" class="card-title">Filter Minds</text>
+  <text x="24" y="92" class="card-desc">
     <tspan x="24" dy="0">Building a research-first platform for questions, evidence,</tspan>
     <tspan x="24" dy="19">expertise and high-signal discussion.</tspan>
   </text>
   
   <!-- Tech Chips -->
-  <g transform="translate(0, 146)">
+  <g transform="translate(0, 142)">
     <rect x="24" y="0" width="76" height="24" rx="12" fill="rgba(56, 139, 253, 0.12)" stroke="rgba(56, 139, 253, 0.35)"/>
     <text x="62" y="16" text-anchor="middle" class="chip-text">Founder</text>
     

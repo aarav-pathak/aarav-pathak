@@ -20,18 +20,28 @@
       <sub><a href="https://filterminds.com">Website (Live)</a> &nbsp;·&nbsp; <a href="TODO_URL">GitHub</a></sub>
     </td>
     <td align="center" valign="top">
-      <a href="https://closest.onrender.com"><img src="assets/card-closest.svg" width="405" alt="Closest - Server-rendered application" /></a><br />
-      <sub><a href="https://closest.onrender.com">Live Demo</a> &nbsp;·&nbsp; <a href="https://github.com/aarav-pathak/closest">GitHub</a></sub>
+      <a href="https://kaizen-mirai.vercel.app/"><img src="assets/card-kaizen-mirai.svg" width="405" alt="Kaizen Mirai - Tech Club Web Platform" /></a><br />
+      <sub><a href="https://kaizen-mirai.vercel.app/">Live Demo</a> &nbsp;·&nbsp; <a href="https://github.com/aarav-pathak/tech_club_web">GitHub Repo</a></sub>
     </td>
   </tr>
   <tr>
     <td align="center" valign="top">
-      <a href="https://github.com/aarav-pathak/krishi_vaani"><img src="assets/card-krishi-vaani.svg" width="405" alt="Krishi Vaani - Agricultural workflows" /></a><br />
-      <sub><a href="https://github.com/aarav-pathak/krishi_vaani">GitHub Repo</a></sub>
+      <a href="https://sheeter-nine.vercel.app/"><img src="assets/card-sheeter.svg" width="405" alt="Sheeter - Web Spreadsheet Tool" /></a><br />
+      <sub><a href="https://sheeter-nine.vercel.app/">Live Demo</a> &nbsp;·&nbsp; <a href="https://github.com/aarav-pathak/sheeter">GitHub Repo</a></sub>
     </td>
     <td align="center" valign="top">
-      <a href="https://github.com/aarav-pathak/EVM"><img src="assets/card-evm.svg" width="405" alt="EVM - Web experience and interface" /></a><br />
-      <sub><a href="https://github.com/aarav-pathak/EVM">GitHub Repo</a></sub>
+      <a href="https://tasky-seven-delta.vercel.app/auth"><img src="assets/card-tasky.svg" width="405" alt="Tasky - Workflow & Task Management" /></a><br />
+      <sub><a href="https://tasky-seven-delta.vercel.app/auth">Live App</a> &nbsp;·&nbsp; <a href="https://github.com/aarav-pathak/TAsky">GitHub Repo</a></sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="top">
+      <a href="https://strangery.vercel.app/"><img src="assets/card-strangery.svg" width="405" alt="Strangery - Real-time Communication" /></a><br />
+      <sub><a href="https://strangery.vercel.app/">Live App</a> &nbsp;·&nbsp; <a href="https://github.com/aarav-pathak/stranger_talk">GitHub Repo</a></sub>
+    </td>
+    <td align="center" valign="top">
+      <a href="https://closest.onrender.com"><img src="assets/card-closest.svg" width="405" alt="Closest - Server-rendered application" /></a><br />
+      <sub><a href="https://closest.onrender.com">Live Demo</a> &nbsp;·&nbsp; <a href="https://github.com/aarav-pathak/closest">GitHub Repo</a></sub>
     </td>
   </tr>
 </table>
