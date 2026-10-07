@@ -114,9 +114,13 @@
 <br/>
 
 <div align="center">
+  <img src="assets/stats.svg" alt="GitHub Activity Overview" width="830"/>
+</div>
 
-<img src="profile-3d-contrib/profile-night-rainbow.svg" alt="3D Contribution Graph" width="830"/>
+<br/>
 
+<div align="center">
+  <img src="profile-3d-contrib/profile-night-rainbow.svg" alt="3D Contribution Graph" width="830"/>
 </div>
 
 <br/>
