@@ -83,7 +83,7 @@
     <rect x="0" y="0" width="148" height="114" rx="10" fill="#111827" stroke="#1f2937" stroke-width="0.8"/>
     <rect x="0" y="0" width="4" height="114" rx="3" fill="url(#bar-amber)"/>
     <text x="18" y="20" class="label">REPOSITORIES</text>
-    <text x="14" y="57" class="val">49</text>
+    <text x="14" y="57" class="val">41</text>
     <text x="14" y="75" class="unit">⭐ 28 stars earned</text>
     <rect x="14" y="88" width="120" height="3" fill="#1f2937" rx="1.5"/>
     <rect x="14" y="88" width="94" height="3" fill="url(#bar-amber)" rx="1.5"/>
@@ -94,12 +94,12 @@
     <rect x="0" y="0" width="148" height="114" rx="10" fill="#111827" stroke="#1f2937" stroke-width="0.8"/>
     <rect x="0" y="0" width="4" height="114" rx="3" fill="url(#bar-cyan)"/>
     <text x="18" y="20" class="label">TOP STACK</text>
-    <text x="14" y="43" class="unit-lang" fill="#3178c6">● TypeScript <tspan fill="#f9fafb" font-weight="600">57%</tspan></text>
-    <text x="14" y="59" class="unit-lang" fill="#f1e05a">● JavaScript <tspan fill="#f9fafb" font-weight="600">29%</tspan></text>
-    <text x="14" y="75" class="unit-lang" fill="#00ADD8">● Go <tspan fill="#f9fafb" font-weight="600">6.4%</tspan></text>
+    <text x="14" y="43" class="unit-lang" fill="#3178c6">● TypeScript <tspan fill="#f9fafb" font-weight="600">61%</tspan></text>
+    <text x="14" y="59" class="unit-lang" fill="#f1e05a">● JavaScript <tspan fill="#f9fafb" font-weight="600">27%</tspan></text>
+    <text x="14" y="75" class="unit-lang" fill="#00ADD8">● Go <tspan fill="#f9fafb" font-weight="600">6.8%</tspan></text>
     <rect x="14" y="88" width="120" height="3" fill="#1f2937" rx="1.5"/>
-    <rect x="14" y="88" width="68" height="3" fill="#3178c6" rx="1.5"/>
-    <rect x="82" y="88" width="35" height="3" fill="#f1e05a"/>
+    <rect x="14" y="88" width="72" height="3" fill="#3178c6" rx="1.5"/>
+    <rect x="86" y="88" width="31" height="3" fill="#f1e05a"/>
     <rect x="117" y="88" width="17" height="3" fill="#00ADD8" rx="1.5"/>
   </g>
 </svg>
