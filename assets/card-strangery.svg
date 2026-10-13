@@ -94,10 +94,10 @@
   <!-- tech chips -->
   <g transform="translate(0, 157)">
     <rect x="24" y="0" width="96" height="22" rx="11" fill="rgba(56,139,253,0.1)" stroke="rgba(56,139,253,0.22)" stroke-width="1"/>
-    <text x="72" y="14.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,monospace" font-size="10.5" font-weight="500" fill="#79c0ff">WebSockets</text>
+    <text x="72" y="14.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,monospace" font-size="10.5" font-weight="500" fill="#e9d5ff">WebSockets</text>
     <rect x="128" y="0" width="75" height="22" rx="11" fill="rgba(56,139,253,0.1)" stroke="rgba(56,139,253,0.22)" stroke-width="1"/>
-    <text x="165" y="14.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,monospace" font-size="10.5" font-weight="500" fill="#79c0ff">Node.js</text>
+    <text x="165" y="14.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,monospace" font-size="10.5" font-weight="500" fill="#e9d5ff">Node.js</text>
     <rect x="211" y="0" width="75" height="22" rx="11" fill="rgba(56,139,253,0.1)" stroke="rgba(56,139,253,0.22)" stroke-width="1"/>
-    <text x="248" y="14.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,monospace" font-size="10.5" font-weight="500" fill="#79c0ff">Express</text>
+    <text x="248" y="14.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,monospace" font-size="10.5" font-weight="500" fill="#e9d5ff">Express</text>
   </g>
 </svg>

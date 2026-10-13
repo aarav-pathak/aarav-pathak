@@ -6,9 +6,9 @@
       <stop offset="100%" stop-color="#0d1117"/>
     </linearGradient>
     <linearGradient id="l1" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#388bfd" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#79c0ff" stop-opacity="0.9"/>
-      <stop offset="100%" stop-color="#388bfd" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#c084fc" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/>
       <animate attributeName="x1" values="-100%;100%" dur="3.5s" repeatCount="indefinite"/>
       <animate attributeName="x2" values="0%;200%" dur="3.5s" repeatCount="indefinite"/>
     </linearGradient>
@@ -37,52 +37,52 @@
     .d3{ animation:pdot 2.8s infinite; transform-origin:18px 22px; }
   </style>
 
-  <!-- Column 1: Languages -->
+  <!-- Column 1: Languages (Violet) -->
   <rect x="0.5" y="0.5" width="257" height="147" rx="12" fill="url(#bg-col)" stroke="#21262d"/>
   <line x1="14" y1="1" x2="244" y2="1" stroke="url(#l1)" stroke-width="1.2" stroke-linecap="round"/>
-  <circle cx="18" cy="22" r="2.5" fill="#388bfd" class="d1"/>
-  <text x="28" y="26" class="col-label" fill="#388bfd">LANGUAGES</text>
+  <circle cx="18" cy="22" r="2.5" fill="#a855f7" class="d1"/>
+  <text x="28" y="26" class="col-label" fill="#c084fc">LANGUAGES</text>
   <!-- chips row 1 -->
-  <rect x="16" y="44" width="42" height="20" rx="10" fill="rgba(56,139,253,0.1)" stroke="rgba(56,139,253,0.2)"/>
+  <rect x="16" y="44" width="42" height="20" rx="10" fill="rgba(168,85,247,0.1)" stroke="rgba(168,85,247,0.22)"/>
   <text x="37" y="58" text-anchor="middle" class="chip-t">C++</text>
-  <rect x="64" y="44" width="60" height="20" rx="10" fill="rgba(56,139,253,0.1)" stroke="rgba(56,139,253,0.2)"/>
+  <rect x="64" y="44" width="60" height="20" rx="10" fill="rgba(168,85,247,0.1)" stroke="rgba(168,85,247,0.22)"/>
   <text x="94" y="58" text-anchor="middle" class="chip-t">Python</text>
-  <rect x="130" y="44" width="86" height="20" rx="10" fill="rgba(56,139,253,0.1)" stroke="rgba(56,139,253,0.2)"/>
+  <rect x="130" y="44" width="86" height="20" rx="10" fill="rgba(168,85,247,0.1)" stroke="rgba(168,85,247,0.22)"/>
   <text x="173" y="58" text-anchor="middle" class="chip-t">JavaScript</text>
   <!-- row 2 -->
-  <rect x="16" y="72" width="90" height="20" rx="10" fill="rgba(56,139,253,0.1)" stroke="rgba(56,139,253,0.2)"/>
+  <rect x="16" y="72" width="90" height="20" rx="10" fill="rgba(168,85,247,0.1)" stroke="rgba(168,85,247,0.22)"/>
   <text x="61" y="86" text-anchor="middle" class="chip-t">TypeScript</text>
 
-  <!-- Column 2: Web & Backend -->
+  <!-- Column 2: Web & Backend (Green) -->
   <rect x="287.5" y="0.5" width="257" height="147" rx="12" fill="url(#bg-col)" stroke="#21262d"/>
   <line x1="301" y1="1" x2="531" y2="1" stroke="url(#l2)" stroke-width="1.2" stroke-linecap="round"/>
   <circle cx="305" cy="22" r="2.5" fill="#56d364" class="d2"/>
   <text x="315" y="26" class="col-label" fill="#56d364">WEB &amp; BACKEND</text>
   <!-- row 1 -->
-  <rect x="303" y="44" width="68" height="20" rx="10" fill="rgba(56,139,253,0.1)" stroke="rgba(56,139,253,0.2)"/>
+  <rect x="303" y="44" width="68" height="20" rx="10" fill="rgba(86,211,100,0.1)" stroke="rgba(86,211,100,0.22)"/>
   <text x="337" y="58" text-anchor="middle" class="chip-t">Node.js</text>
-  <rect x="379" y="44" width="70" height="20" rx="10" fill="rgba(56,139,253,0.1)" stroke="rgba(56,139,253,0.2)"/>
+  <rect x="379" y="44" width="70" height="20" rx="10" fill="rgba(86,211,100,0.1)" stroke="rgba(86,211,100,0.22)"/>
   <text x="414" y="58" text-anchor="middle" class="chip-t">Express</text>
   <!-- row 2 -->
-  <rect x="303" y="72" width="120" height="20" rx="10" fill="rgba(56,139,253,0.1)" stroke="rgba(56,139,253,0.2)"/>
+  <rect x="303" y="72" width="120" height="20" rx="10" fill="rgba(86,211,100,0.1)" stroke="rgba(86,211,100,0.22)"/>
   <text x="363" y="86" text-anchor="middle" class="chip-t">React / Next.js</text>
   <!-- row 3 -->
-  <rect x="303" y="100" width="112" height="20" rx="10" fill="rgba(56,139,253,0.1)" stroke="rgba(56,139,253,0.2)"/>
+  <rect x="303" y="100" width="112" height="20" rx="10" fill="rgba(86,211,100,0.1)" stroke="rgba(86,211,100,0.22)"/>
   <text x="359" y="114" text-anchor="middle" class="chip-t">Authentication</text>
 
-  <!-- Column 3: Data & Infra -->
+  <!-- Column 3: Data & Infra (Gold) -->
   <rect x="573.5" y="0.5" width="256" height="147" rx="12" fill="url(#bg-col)" stroke="#21262d"/>
   <line x1="587" y1="1" x2="816" y2="1" stroke="url(#l3)" stroke-width="1.2" stroke-linecap="round"/>
   <circle cx="591" cy="22" r="2.5" fill="#e3b341" class="d3"/>
   <text x="601" y="26" class="col-label" fill="#e3b341">DATA &amp; INFRA</text>
   <!-- row 1 -->
-  <rect x="589" y="44" width="76" height="20" rx="10" fill="rgba(56,139,253,0.1)" stroke="rgba(56,139,253,0.2)"/>
+  <rect x="589" y="44" width="76" height="20" rx="10" fill="rgba(227,179,65,0.1)" stroke="rgba(227,179,65,0.22)"/>
   <text x="627" y="58" text-anchor="middle" class="chip-t">MongoDB</text>
-  <rect x="673" y="44" width="78" height="20" rx="10" fill="rgba(56,139,253,0.1)" stroke="rgba(56,139,253,0.2)"/>
+  <rect x="673" y="44" width="78" height="20" rx="10" fill="rgba(227,179,65,0.1)" stroke="rgba(227,179,65,0.22)"/>
   <text x="712" y="58" text-anchor="middle" class="chip-t">Supabase</text>
   <!-- row 2 -->
-  <rect x="589" y="72" width="82" height="20" rx="10" fill="rgba(56,139,253,0.1)" stroke="rgba(56,139,253,0.2)"/>
+  <rect x="589" y="72" width="82" height="20" rx="10" fill="rgba(227,179,65,0.1)" stroke="rgba(227,179,65,0.22)"/>
   <text x="630" y="86" text-anchor="middle" class="chip-t">REST APIs</text>
-  <rect x="679" y="72" width="100" height="20" rx="10" fill="rgba(56,139,253,0.1)" stroke="rgba(56,139,253,0.2)"/>
+  <rect x="679" y="72" width="100" height="20" rx="10" fill="rgba(227,179,65,0.1)" stroke="rgba(227,179,65,0.22)"/>
   <text x="729" y="86" text-anchor="middle" class="chip-t">Git / GitHub</text>
 </svg>

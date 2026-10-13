@@ -94,12 +94,12 @@
   <!-- tech chips -->
   <g transform="translate(0, 157)">
     <rect x="24" y="0" width="75" height="22" rx="11" fill="rgba(56,139,253,0.1)" stroke="rgba(56,139,253,0.22)" stroke-width="1"/>
-    <text x="61" y="14.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,monospace" font-size="10.5" font-weight="500" fill="#79c0ff">Node.js</text>
+    <text x="61" y="14.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,monospace" font-size="10.5" font-weight="500" fill="#adbac7">Node.js</text>
     <rect x="107" y="0" width="75" height="22" rx="11" fill="rgba(56,139,253,0.1)" stroke="rgba(56,139,253,0.22)" stroke-width="1"/>
-    <text x="144" y="14.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,monospace" font-size="10.5" font-weight="500" fill="#79c0ff">Express</text>
+    <text x="144" y="14.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,monospace" font-size="10.5" font-weight="500" fill="#adbac7">Express</text>
     <rect x="190" y="0" width="75" height="22" rx="11" fill="rgba(56,139,253,0.1)" stroke="rgba(56,139,253,0.22)" stroke-width="1"/>
-    <text x="227" y="14.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,monospace" font-size="10.5" font-weight="500" fill="#79c0ff">MongoDB</text>
+    <text x="227" y="14.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,monospace" font-size="10.5" font-weight="500" fill="#adbac7">MongoDB</text>
     <rect x="273" y="0" width="47" height="22" rx="11" fill="rgba(56,139,253,0.1)" stroke="rgba(56,139,253,0.22)" stroke-width="1"/>
-    <text x="296" y="14.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,monospace" font-size="10.5" font-weight="500" fill="#79c0ff">EJS</text>
+    <text x="296" y="14.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,monospace" font-size="10.5" font-weight="500" fill="#adbac7">EJS</text>
   </g>
 </svg>

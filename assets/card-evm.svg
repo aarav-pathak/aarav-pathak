@@ -8,7 +8,7 @@
     <linearGradient id="evm-laser" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#bc8cff" stop-opacity="0"/>
       <stop offset="50%" stop-color="#bc8cff" stop-opacity="1"/>
-      <stop offset="100%" stop-color="#58a6ff" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#c084fc" stop-opacity="0"/>
       <animate attributeName="x1" values="-100%;100%" dur="3.6s" repeatCount="indefinite"/>
       <animate attributeName="x2" values="0%;200%" dur="3.6s" repeatCount="indefinite"/>
     </linearGradient>
@@ -39,7 +39,7 @@
       font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
       font-size: 11px;
       font-weight: 500;
-      fill: #79c0ff;
+      fill: #e9d5ff;
     }
   </style>
 

@@ -297,9 +297,9 @@ def generate_competitive_svg(cf_data, lc_data):
       <stop offset="100%" stop-color="#0d1117"/>
     </linearGradient>
     <linearGradient id="cf-l" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#388bfd" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#79c0ff" stop-opacity="1"/>
-      <stop offset="100%" stop-color="#388bfd" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#c084fc" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/>
       <animate attributeName="x1" values="-100%;100%" dur="3.2s" repeatCount="indefinite"/>
       <animate attributeName="x2" values="0%;200%" dur="3.2s" repeatCount="indefinite"/>
     </linearGradient>
@@ -331,8 +331,8 @@ def generate_competitive_svg(cf_data, lc_data):
   <!-- Codeforces -->
   <rect x="0.5" y="0.5" width="259" height="117" rx="12" fill="url(#cbg)" stroke="#21262d"/>
   <line x1="14" y1="1" x2="246" y2="1" stroke="url(#cf-l)" stroke-width="1.5" stroke-linecap="round"/>
-  <circle cx="18" cy="20" r="2.5" fill="#388bfd" class="d1"/>
-  <text x="28" y="24" class="col-label" fill="#388bfd">CODEFORCES</text>
+  <circle cx="18" cy="20" r="2.5" fill="#a855f7" class="d1"/>
+  <text x="28" y="24" class="col-label" fill="#c084fc">CODEFORCES</text>
   <text x="18" y="68" class="stat-num">{cf_rating}</text>
   <text x="18" y="92" class="stat-sub">{cf_max} peak · {cf_solved} solved</text>
 

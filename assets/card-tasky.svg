@@ -94,10 +94,10 @@
   <!-- tech chips -->
   <g transform="translate(0, 157)">
     <rect x="24" y="0" width="61" height="22" rx="11" fill="rgba(56,139,253,0.1)" stroke="rgba(56,139,253,0.22)" stroke-width="1"/>
-    <text x="54" y="14.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,monospace" font-size="10.5" font-weight="500" fill="#79c0ff">React</text>
+    <text x="54" y="14.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,monospace" font-size="10.5" font-weight="500" fill="#fef08a">React</text>
     <rect x="93" y="0" width="75" height="22" rx="11" fill="rgba(56,139,253,0.1)" stroke="rgba(56,139,253,0.22)" stroke-width="1"/>
-    <text x="130" y="14.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,monospace" font-size="10.5" font-weight="500" fill="#79c0ff">Node.js</text>
+    <text x="130" y="14.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,monospace" font-size="10.5" font-weight="500" fill="#fef08a">Node.js</text>
     <rect x="176" y="0" width="54" height="22" rx="11" fill="rgba(56,139,253,0.1)" stroke="rgba(56,139,253,0.22)" stroke-width="1"/>
-    <text x="203" y="14.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,monospace" font-size="10.5" font-weight="500" fill="#79c0ff">Auth</text>
+    <text x="203" y="14.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,monospace" font-size="10.5" font-weight="500" fill="#fef08a">Auth</text>
   </g>
 </svg>
