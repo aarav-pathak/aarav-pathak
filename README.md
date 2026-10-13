@@ -129,7 +129,7 @@
 
 <div align="center">
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/aaravpathak)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/aarav-pathak)
 &nbsp;
 [![CodeChef](https://img.shields.io/badge/CodeChef-%235B4638?style=for-the-badge&logo=codechef&logoColor=white)](https://codechef.com/users/alive_frog_99)
 &nbsp;
