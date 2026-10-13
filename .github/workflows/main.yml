@@ -2,7 +2,7 @@ name: Update GitHub Profile Stats & 3D Graph
 
 on:
   schedule:
-    - cron: "0 18 * * *"
+    - cron: "0 */6 * * *"
   workflow_dispatch:
   push:
     branches:
@@ -10,6 +10,7 @@ on:
     paths-ignore:
       - 'profile-3d-contrib/**'
       - 'assets/stats.svg'
+      - 'assets/competitive.svg'
 
 permissions:
   contents: write
@@ -23,7 +24,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Generate Profile Stats SVG
+      - name: Generate Profile & Competitive Stats SVGs
         run: python3 scripts/generate_stats.py
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -38,7 +39,7 @@ jobs:
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git add assets/stats.svg profile-3d-contrib/
+          git add assets/stats.svg assets/competitive.svg profile-3d-contrib/
           if git commit -m "chore(auto): update profile stats & 3d contrib [skip ci]"; then
             git push
           fi

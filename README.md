@@ -1,7 +1,5 @@
 <div align="center">
-
-<img src="assets/header.svg" alt="Aarav Pathak" width="830"/>
-
+  <img src="assets/header.svg" alt="Aarav Pathak" width="830"/>
 </div>
 
 <br/>
@@ -12,13 +10,7 @@
 <br/>
 
 <div align="center">
-<img src="assets/focus-radar.svg" alt="Current Initiatives" width="830"/>
-</div>
-
-<br/>
-
-<div align="center">
-<img src="assets/divider.svg" alt="" width="830"/>
+  <img src="assets/focus-radar.svg" alt="Current Initiatives" width="830"/>
 </div>
 
 <br/>
@@ -79,31 +71,19 @@
 
 <br/>
 
-<div align="center">
-<img src="assets/divider.svg" alt="" width="830"/>
-</div>
-
-<br/>
-
 <!--- ENGINEERING & PRINCIPLES --->
 <img src="assets/section-engineering.svg" alt="Engineering" width="830"/>
 
 <br/>
 
 <div align="center">
-<img src="assets/skills.svg" alt="Skills" width="830"/>
+  <img src="assets/skills.svg" alt="Skills" width="830"/>
 </div>
 
 <br/>
 
 <div align="center">
-<img src="assets/philosophy.svg" alt="Engineering Principles" width="830"/>
-</div>
-
-<br/>
-
-<div align="center">
-<img src="assets/divider.svg" alt="" width="830"/>
+  <img src="assets/philosophy.svg" alt="Engineering Principles" width="830"/>
 </div>
 
 <br/>
@@ -114,49 +94,17 @@
 <br/>
 
 <div align="center">
-  <img src="assets/stats.svg" alt="GitHub Activity Overview" width="830"/>
-</div>
-
-<br/>
-
-<div align="center">
-  <img src="profile-3d-contrib/profile-night-rainbow.svg" alt="3D Contribution Graph" width="830"/>
-</div>
-
-<br/>
-
-<div align="center">
-
-<table width="100%" cellspacing="0" cellpadding="0" border="0">
-<tr>
-<td align="center" width="56%">
   <a href="https://github.com/aarav-pathak">
-    <img width="100%" src="https://github-readme-stats.vercel.app/api?username=aarav-pathak&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=388bfd&text_color=7d8590&ring_color=388bfd&include_all_commits=true&count_private=true" alt="GitHub Stats"/>
+    <img src="assets/stats.svg" alt="GitHub Activity Overview" width="830"/>
   </a>
-</td>
-<td width="3%"></td>
-<td align="center" width="41%">
+</div>
+
+<br/>
+
+<div align="center">
   <a href="https://github.com/aarav-pathak">
-    <img width="100%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=aarav-pathak&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=7d8590&langs_count=8" alt="Top Languages"/>
+    <img src="profile-3d-contrib/profile-night-rainbow.svg" alt="3D Contribution Graph" width="830"/>
   </a>
-</td>
-</tr>
-</table>
-
-</div>
-
-<br/>
-
-<div align="center">
-<a href="https://github.com/aarav-pathak">
-  <img width="830" src="https://github-readme-streak-stats.herokuapp.com/?user=aarav-pathak&theme=github-dark&hide_border=true&background=0d1117&ring=388bfd&fire=58a6ff&currStreakLabel=79c0ff&sideNums=e6edf3&sideLabels=7d8590&dates=7d8590" alt="GitHub Streak"/>
-</a>
-</div>
-
-<br/>
-
-<div align="center">
-<img src="assets/divider.svg" alt="" width="830"/>
 </div>
 
 <br/>
@@ -167,13 +115,9 @@
 <br/>
 
 <div align="center">
-<img src="assets/competitive.svg" alt="Competitive Programming Stats" width="830"/>
-</div>
-
-<br/>
-
-<div align="center">
-<img src="assets/divider.svg" alt="" width="830"/>
+  <a href="https://codechef.com/users/alive_frog_99">
+    <img src="assets/competitive.svg" alt="Competitive Programming Stats" width="830"/>
+  </a>
 </div>
 
 <br/>
@@ -187,16 +131,12 @@
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/aaravpathak)
 &nbsp;
-[![Codeforces](https://img.shields.io/badge/Codeforces-%231F8ACB?style=for-the-badge&logo=codeforces&logoColor=white)](https://codeforces.com/profile/aarav-pathak)
+[![CodeChef](https://img.shields.io/badge/CodeChef-%235B4638?style=for-the-badge&logo=codechef&logoColor=white)](https://codechef.com/users/alive_frog_99)
 &nbsp;
-[![LeetCode](https://img.shields.io/badge/LeetCode-%23FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/aarav-pathak)
+[![LeetCode](https://img.shields.io/badge/LeetCode-%23FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/u/orthodoxcoder/)
 &nbsp;
-[![CodeChef](https://img.shields.io/badge/CodeChef-%235B4638?style=for-the-badge&logo=codechef&logoColor=white)](https://codechef.com/users/aarav_pathak)
+[![Codeforces](https://img.shields.io/badge/Codeforces-%231F8ACB?style=for-the-badge&logo=codeforces&logoColor=white)](https://codeforces.com/profile/orthodoxcoder)
+&nbsp;
+[![GitHub](https://img.shields.io/badge/GitHub-%23121011?style=for-the-badge&logo=github&logoColor=white)](https://github.com/aarav-pathak)
 
-</div>
-
-<br/>
-
-<div align="center">
-<img src="assets/divider.svg" alt="" width="830"/>
 </div>

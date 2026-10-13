@@ -50,14 +50,14 @@
   <line x1="300" y1="1" x2="530" y2="1" stroke="url(#lc-l)" stroke-width="1.5" stroke-linecap="round"/>
   <circle cx="304" cy="20" r="2.5" fill="#ffa116" class="d2"/>
   <text x="314" y="24" class="col-label" fill="#ffa116">LEETCODE</text>
-  <text x="304" y="68" class="stat-num">199</text>
-  <text x="304" y="92" class="stat-sub">solved across C++, JS and Python</text>
+  <text x="304" y="68" class="stat-num">201</text>
+  <text x="304" y="92" class="stat-sub">133E · 61M · 7H solved</text>
 
   <!-- CodeChef -->
   <rect x="572.5" y="0.5" width="257" height="117" rx="12" fill="url(#cbg)" stroke="#21262d"/>
   <line x1="586" y1="1" x2="815" y2="1" stroke="url(#cc-l)" stroke-width="1.5" stroke-linecap="round"/>
   <circle cx="590" cy="20" r="2.5" fill="#e3b341" class="d3"/>
   <text x="600" y="24" class="col-label" fill="#e3b341">CODECHEF</text>
-  <text x="590" y="68" class="stat-num">1396</text>
-  <text x="590" y="92" class="stat-sub">82 solved · 22 contests</text>
+  <text x="590" y="68" class="stat-num">1410</text>
+  <text x="590" y="92" class="stat-sub">Div 3 (2★) · 23 contests · 82 solved</text>
 </svg>
