@@ -1,9 +1,15 @@
-name: GitHub Profile 3D Contribution
+name: Update GitHub Profile Stats & 3D Graph
 
 on:
   schedule:
     - cron: "0 18 * * *"
   workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - 'profile-3d-contrib/**'
+      - 'assets/stats.svg'
 
 permissions:
   contents: write
@@ -11,11 +17,16 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-    name: generate-github-profile-3d-contrib
+    name: update-profile-assets
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v5
+        uses: actions/checkout@v4
+
+      - name: Generate Profile Stats SVG
+        run: python3 scripts/generate_stats.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate 3D contribution graph
         uses: yoshi389111/github-profile-3d-contrib@latest
@@ -27,7 +38,7 @@ jobs:
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git add -A .
-          if git commit -m "generated"; then
+          git add assets/stats.svg profile-3d-contrib/
+          if git commit -m "chore(auto): update profile stats & 3d contrib [skip ci]"; then
             git push
           fi
