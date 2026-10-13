@@ -168,91 +168,105 @@ def generate_github_svg(data):
   <title>Aarav Pathak - GitHub Activity Stats</title>
   <defs>
     <linearGradient id="bg-grad" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#111820"/>
-      <stop offset="100%" stop-color="#0d1117"/>
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#0a0e14"/>
     </linearGradient>
     <linearGradient id="glow-line" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#388bfd" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#58a6ff" stop-opacity="0.9"/>
-      <stop offset="100%" stop-color="#388bfd" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#a78bfa" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0"/>
       <animate attributeName="x1" values="-100%;100%" dur="4s" repeatCount="indefinite"/>
       <animate attributeName="x2" values="0%;200%" dur="4s" repeatCount="indefinite"/>
     </linearGradient>
-    <linearGradient id="accent-green" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#3fb950"/>
-      <stop offset="100%" stop-color="#56d364"/>
+    <linearGradient id="bar-teal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0d9488"/>
+      <stop offset="100%" stop-color="#2dd4bf"/>
+    </linearGradient>
+    <linearGradient id="bar-rose" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#e11d48"/>
+      <stop offset="100%" stop-color="#fb7185"/>
+    </linearGradient>
+    <linearGradient id="bar-violet" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="bar-amber" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+    <linearGradient id="bar-cyan" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0891b2"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
     </linearGradient>
   </defs>
 
   <style>
-    .label {{ font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; font-size: 9.5px; font-weight: 600; letter-spacing: 1.2px; fill: #7d8590; text-transform: uppercase; }}
-    .val {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-size: 24px; font-weight: 700; fill: #f0f6fc; }}
-    .unit {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-size: 11px; fill: #8b949e; font-weight: 400; }}
+    .label {{ font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; font-size: 9.5px; font-weight: 600; letter-spacing: 1.2px; fill: #6b7280; text-transform: uppercase; }}
+    .val {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-size: 26px; font-weight: 700; fill: #f9fafb; }}
+    .unit {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-size: 11px; fill: #6b7280; font-weight: 400; }}
     .unit-lang {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-size: 10.5px; font-weight: 500; }}
   </style>
 
   <!-- Card Background -->
-  <rect x="0.5" y="0.5" width="829" height="149" rx="12" fill="url(#bg-grad)" stroke="#21262d"/>
+  <rect x="0.5" y="0.5" width="829" height="149" rx="12" fill="url(#bg-grad)" stroke="#1f2937"/>
   <line x1="20" y1="1" x2="810" y2="1" stroke="url(#glow-line)" stroke-width="1.5" stroke-linecap="round"/>
 
-  <!-- Column 1: Contributions -->
+  <!-- Col 1: Contributions — teal -->
   <g transform="translate(19, 18)">
-    <rect x="0" y="0" width="148" height="114" rx="10" fill="#161b22" stroke="#30363d" stroke-width="0.8"/>
-    <circle cx="14" cy="17" r="3.5" fill="#3fb950"/>
-    <text x="24" y="20" class="label">CONTRIBUTIONS</text>
-    <text x="14" y="56" class="val">{total_contribs}</text>
-    <text x="14" y="74" class="unit">Total (2025–26)</text>
-    <rect x="14" y="87" width="120" height="4" fill="#21262d" rx="2"/>
-    <rect x="14" y="87" width="98" height="4" fill="url(#accent-green)" rx="2"/>
+    <rect x="0" y="0" width="148" height="114" rx="10" fill="#111827" stroke="#1f2937" stroke-width="0.8"/>
+    <rect x="0" y="0" width="4" height="114" rx="3" fill="url(#bar-teal)"/>
+    <text x="18" y="20" class="label">CONTRIBUTIONS</text>
+    <text x="14" y="57" class="val">{total_contribs}</text>
+    <text x="14" y="75" class="unit">Total (2025–26)</text>
+    <rect x="14" y="88" width="120" height="3" fill="#1f2937" rx="1.5"/>
+    <rect x="14" y="88" width="98" height="3" fill="url(#bar-teal)" rx="1.5"/>
   </g>
 
-  <!-- Column 2: Commits -->
+  <!-- Col 2: Commits — rose -->
   <g transform="translate(180, 18)">
-    <rect x="0" y="0" width="148" height="114" rx="10" fill="#161b22" stroke="#30363d" stroke-width="0.8"/>
-    <circle cx="14" cy="17" r="3.5" fill="#388bfd"/>
-    <text x="24" y="20" class="label">COMMITS</text>
-    <text x="14" y="56" class="val">{commits_count}</text>
-    <text x="14" y="74" class="unit">Code pushes</text>
-    <rect x="14" y="87" width="120" height="4" fill="#21262d" rx="2"/>
-    <rect x="14" y="87" width="88" height="4" fill="#388bfd" rx="2"/>
+    <rect x="0" y="0" width="148" height="114" rx="10" fill="#111827" stroke="#1f2937" stroke-width="0.8"/>
+    <rect x="0" y="0" width="4" height="114" rx="3" fill="url(#bar-rose)"/>
+    <text x="18" y="20" class="label">COMMITS</text>
+    <text x="14" y="57" class="val">{commits_count}</text>
+    <text x="14" y="75" class="unit">Code pushes</text>
+    <rect x="14" y="88" width="120" height="3" fill="#1f2937" rx="1.5"/>
+    <rect x="14" y="88" width="88" height="3" fill="url(#bar-rose)" rx="1.5"/>
   </g>
 
-  <!-- Column 3: PRs -->
+  <!-- Col 3: PRs — violet -->
   <g transform="translate(341, 18)">
-    <rect x="0" y="0" width="148" height="114" rx="10" fill="#161b22" stroke="#30363d" stroke-width="0.8"/>
-    <circle cx="14" cy="17" r="3.5" fill="#a371f7"/>
-    <text x="24" y="20" class="label">PULL REQUESTS</text>
-    <text x="14" y="56" class="val">{all_prs_count}</text>
-    <text x="14" y="74" class="unit">{merged_prs_count} merged · open source</text>
-    <rect x="14" y="87" width="120" height="4" fill="#21262d" rx="2"/>
-    <rect x="14" y="87" width="82" height="4" fill="#a371f7" rx="2"/>
+    <rect x="0" y="0" width="148" height="114" rx="10" fill="#111827" stroke="#1f2937" stroke-width="0.8"/>
+    <rect x="0" y="0" width="4" height="114" rx="3" fill="url(#bar-violet)"/>
+    <text x="18" y="20" class="label">PULL REQUESTS</text>
+    <text x="14" y="57" class="val">{all_prs_count}</text>
+    <text x="14" y="75" class="unit">{merged_prs_count} merged · open source</text>
+    <rect x="14" y="88" width="120" height="3" fill="#1f2937" rx="1.5"/>
+    <rect x="14" y="88" width="82" height="3" fill="url(#bar-violet)" rx="1.5"/>
   </g>
 
-  <!-- Column 4: Repositories -->
+  <!-- Col 4: Repos — amber -->
   <g transform="translate(502, 18)">
-    <rect x="0" y="0" width="148" height="114" rx="10" fill="#161b22" stroke="#30363d" stroke-width="0.8"/>
-    <circle cx="14" cy="17" r="3.5" fill="#e3b341"/>
-    <text x="24" y="20" class="label">REPOSITORIES</text>
-    <text x="14" y="56" class="val">{repos_count}</text>
-    <text x="14" y="74" class="unit">⭐ {stars_count} stars earned</text>
-    <rect x="14" y="87" width="120" height="4" fill="#21262d" rx="2"/>
-    <rect x="14" y="87" width="94" height="4" fill="#e3b341" rx="2"/>
+    <rect x="0" y="0" width="148" height="114" rx="10" fill="#111827" stroke="#1f2937" stroke-width="0.8"/>
+    <rect x="0" y="0" width="4" height="114" rx="3" fill="url(#bar-amber)"/>
+    <text x="18" y="20" class="label">REPOSITORIES</text>
+    <text x="14" y="57" class="val">{repos_count}</text>
+    <text x="14" y="75" class="unit">⭐ {stars_count} stars earned</text>
+    <rect x="14" y="88" width="120" height="3" fill="#1f2937" rx="1.5"/>
+    <rect x="14" y="88" width="94" height="3" fill="url(#bar-amber)" rx="1.5"/>
   </g>
 
-  <!-- Column 5: Top Languages -->
+  <!-- Col 5: Stack — cyan -->
   <g transform="translate(663, 18)">
-    <rect x="0" y="0" width="148" height="114" rx="10" fill="#161b22" stroke="#30363d" stroke-width="0.8"/>
-    <circle cx="14" cy="17" r="3.5" fill="#f7816f"/>
-    <text x="24" y="20" class="label">TOP STACK</text>
-    
-    <text x="14" y="43" class="unit-lang" fill="{l1_col}">● {l1_name} <tspan fill="#f0f6fc" font-weight="600">{l1_pct:.0f}%</tspan></text>
-    <text x="14" y="59" class="unit-lang" fill="{l2_col}">● {l2_name} <tspan fill="#f0f6fc" font-weight="600">{l2_pct:.0f}%</tspan></text>
-    <text x="14" y="75" class="unit-lang" fill="{l3_col}">● {l3_name} <tspan fill="#f0f6fc" font-weight="600">{l3_pct:.1f}%</tspan></text>
-
-    <rect x="14" y="87" width="{bar_total}" height="4" fill="#21262d" rx="2"/>
-    <rect x="14" y="87" width="{b1_w}" height="4" fill="{l1_col}" rx="2"/>
-    <rect x="{14 + b1_w}" y="87" width="{b2_w}" height="4" fill="{l2_col}"/>
-    <rect x="{14 + b1_w + b2_w}" y="87" width="{b3_w}" height="4" fill="{l3_col}" rx="2"/>
+    <rect x="0" y="0" width="148" height="114" rx="10" fill="#111827" stroke="#1f2937" stroke-width="0.8"/>
+    <rect x="0" y="0" width="4" height="114" rx="3" fill="url(#bar-cyan)"/>
+    <text x="18" y="20" class="label">TOP STACK</text>
+    <text x="14" y="43" class="unit-lang" fill="{l1_col}">● {l1_name} <tspan fill="#f9fafb" font-weight="600">{l1_pct:.0f}%</tspan></text>
+    <text x="14" y="59" class="unit-lang" fill="{l2_col}">● {l2_name} <tspan fill="#f9fafb" font-weight="600">{l2_pct:.0f}%</tspan></text>
+    <text x="14" y="75" class="unit-lang" fill="{l3_col}">● {l3_name} <tspan fill="#f9fafb" font-weight="600">{l3_pct:.1f}%</tspan></text>
+    <rect x="14" y="88" width="{bar_total}" height="3" fill="#1f2937" rx="1.5"/>
+    <rect x="14" y="88" width="{b1_w}" height="3" fill="{l1_col}" rx="1.5"/>
+    <rect x="{14 + b1_w}" y="88" width="{b2_w}" height="3" fill="{l2_col}"/>
+    <rect x="{14 + b1_w + b2_w}" y="88" width="{b3_w}" height="3" fill="{l3_col}" rx="1.5"/>
   </g>
 </svg>'''
 
