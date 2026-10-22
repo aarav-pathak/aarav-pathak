@@ -50,8 +50,8 @@
   <line x1="300" y1="1" x2="530" y2="1" stroke="url(#lc-l)" stroke-width="1.5" stroke-linecap="round"/>
   <circle cx="304" cy="20" r="2.5" fill="#ffa116" class="d2"/>
   <text x="314" y="24" class="col-label" fill="#ffa116">LEETCODE</text>
-  <text x="304" y="68" class="stat-num">208</text>
-  <text x="304" y="92" class="stat-sub">139E · 62M · 7H solved</text>
+  <text x="304" y="68" class="stat-num">209</text>
+  <text x="304" y="92" class="stat-sub">139E · 63M · 7H solved</text>
 
   <!-- CodeChef -->
   <rect x="572.5" y="0.5" width="257" height="117" rx="12" fill="url(#cbg)" stroke="#21262d"/>
