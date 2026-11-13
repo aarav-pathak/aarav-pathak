@@ -94,12 +94,12 @@
     <rect x="0" y="0" width="148" height="114" rx="10" fill="#111827" stroke="#1f2937" stroke-width="0.8"/>
     <rect x="0" y="0" width="4" height="114" rx="3" fill="url(#bar-cyan)"/>
     <text x="18" y="20" class="label">TOP STACK</text>
-    <text x="14" y="43" class="unit-lang" fill="#00ADD8">● Go <tspan fill="#f9fafb" font-weight="600">60%</tspan></text>
-    <text x="14" y="59" class="unit-lang" fill="#3178c6">● TypeScript <tspan fill="#f9fafb" font-weight="600">24%</tspan></text>
-    <text x="14" y="75" class="unit-lang" fill="#f1e05a">● JavaScript <tspan fill="#f9fafb" font-weight="600">10.5%</tspan></text>
+    <text x="14" y="43" class="unit-lang" fill="#00ADD8">● Go <tspan fill="#f9fafb" font-weight="600">59%</tspan></text>
+    <text x="14" y="59" class="unit-lang" fill="#3178c6">● TypeScript <tspan fill="#f9fafb" font-weight="600">23%</tspan></text>
+    <text x="14" y="75" class="unit-lang" fill="#f1e05a">● JavaScript <tspan fill="#f9fafb" font-weight="600">11.8%</tspan></text>
     <rect x="14" y="88" width="120" height="3" fill="#1f2937" rx="1.5"/>
-    <rect x="14" y="88" width="72" height="3" fill="#00ADD8" rx="1.5"/>
-    <rect x="86" y="88" width="28" height="3" fill="#3178c6"/>
-    <rect x="114" y="88" width="20" height="3" fill="#f1e05a" rx="1.5"/>
+    <rect x="14" y="88" width="71" height="3" fill="#00ADD8" rx="1.5"/>
+    <rect x="85" y="88" width="27" height="3" fill="#3178c6"/>
+    <rect x="112" y="88" width="22" height="3" fill="#f1e05a" rx="1.5"/>
   </g>
 </svg>
