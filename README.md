@@ -4,19 +4,23 @@
 
 <br/>
 
-<!--- RADAR & FOCUS --->
-<img src="assets/section-initiatives.svg" alt="Radar & Focus" width="830"/>
+<!--- CURRENT FOCUS --->
+<div align="center">
+  <img src="assets/section-initiatives.svg" alt="Current Focus" width="830"/>
+</div>
 
 <br/>
 
 <div align="center">
-  <img src="assets/focus-radar.svg" alt="Current Initiatives" width="830"/>
+  <img src="assets/focus-radar.svg" alt="Current Focus & Initiatives" width="830"/>
 </div>
 
 <br/>
 
 <!--- SELECTED WORK --->
-<img src="assets/section-selected-work.svg" alt="Selected Work" width="830"/>
+<div align="center">
+  <img src="assets/section-selected-work.svg" alt="Selected Work" width="830"/>
+</div>
 
 <br/>
 
@@ -72,7 +76,9 @@
 <br/>
 
 <!--- ENGINEERING & PRINCIPLES --->
-<img src="assets/section-engineering.svg" alt="Engineering" width="830"/>
+<div align="center">
+  <img src="assets/section-engineering.svg" alt="Engineering" width="830"/>
+</div>
 
 <br/>
 
@@ -89,7 +95,9 @@
 <br/>
 
 <!--- GITHUB ACTIVITY --->
-<img src="assets/section-github.svg" alt="GitHub Activity" width="830"/>
+<div align="center">
+  <img src="assets/section-github.svg" alt="GitHub Activity" width="830"/>
+</div>
 
 <br/>
 
@@ -101,16 +109,10 @@
 
 <br/>
 
-<div align="center">
-  <a href="https://github.com/aarav-pathak">
-    <img src="profile-3d-contrib/profile-night-rainbow.svg" alt="3D Contribution Graph" width="830"/>
-  </a>
-</div>
-
-<br/>
-
 <!--- COMPETITIVE PROGRAMMING --->
-<img src="assets/section-competitive.svg" alt="Competitive Programming" width="830"/>
+<div align="center">
+  <img src="assets/section-competitive.svg" alt="Competitive Programming" width="830"/>
+</div>
 
 <br/>
 
@@ -122,21 +124,25 @@
 
 <br/>
 
-<!--- ELSEWHERE --->
-<img src="assets/section-elsewhere.svg" alt="Elsewhere" width="830"/>
+<!--- CONNECT --->
+<div align="center">
+  <img src="assets/section-elsewhere.svg" alt="Connect" width="830"/>
+</div>
 
 <br/>
 
 <div align="center">
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/aarav-pathak)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0d1117?style=flat-square&logo=linkedin&logoColor=f0f6fc)](https://linkedin.com/in/aaravpathak)
 &nbsp;
-[![CodeChef](https://img.shields.io/badge/CodeChef-%235B4638?style=for-the-badge&logo=codechef&logoColor=white)](https://codechef.com/users/alive_frog_99)
+[![GitHub](https://img.shields.io/badge/GitHub-0d1117?style=flat-square&logo=github&logoColor=f0f6fc)](https://github.com/aarav-pathak)
 &nbsp;
-[![LeetCode](https://img.shields.io/badge/LeetCode-%23FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/u/orthodoxcoder/)
+[![LeetCode](https://img.shields.io/badge/LeetCode-0d1117?style=flat-square&logo=leetcode&logoColor=f0f6fc)](https://leetcode.com/u/orthodoxcoder/)
 &nbsp;
-[![Codeforces](https://img.shields.io/badge/Codeforces-%231F8ACB?style=for-the-badge&logo=codeforces&logoColor=white)](https://codeforces.com/profile/orthodoxcoder)
+[![Codeforces](https://img.shields.io/badge/Codeforces-0d1117?style=flat-square&logo=codeforces&logoColor=f0f6fc)](https://codeforces.com/profile/orthodoxcoder)
 &nbsp;
-[![GitHub](https://img.shields.io/badge/GitHub-%23121011?style=for-the-badge&logo=github&logoColor=white)](https://github.com/aarav-pathak)
+[![CodeChef](https://img.shields.io/badge/CodeChef-0d1117?style=flat-square&logo=codechef&logoColor=f0f6fc)](https://codechef.com/users/alive_frog_99)
+&nbsp;
+[![Filter Minds](https://img.shields.io/badge/Filter%20Minds-0d1117?style=flat-square&logo=safari&logoColor=f0f6fc)](https://filterminds.com)
 
 </div>

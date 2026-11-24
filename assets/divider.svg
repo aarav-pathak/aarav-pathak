@@ -1,25 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 24" width="830" height="24" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 16" width="830" height="16" fill="none">
   <title>Divider</title>
-  <defs>
-    <linearGradient id="dl" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#21262d" stop-opacity="0"/>
-      <stop offset="35%" stop-color="#30363d" stop-opacity="0.9"/>
-      <stop offset="50%" stop-color="#c084fc" stop-opacity="1"/>
-      <stop offset="65%" stop-color="#30363d" stop-opacity="0.9"/>
-      <stop offset="100%" stop-color="#21262d" stop-opacity="0"/>
-    </linearGradient>
-    <filter id="fg2" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="2"/>
-    </filter>
-  </defs>
-  <style>
-    @keyframes pulseDiv {
-      0%,100%{ opacity:0.6; transform:scale(1); }
-      50%{ opacity:1; transform:scale(1.5); }
-    }
-    .pd{ animation:pulseDiv 3s ease-in-out infinite; transform-origin:415px 12px; }
-  </style>
-  <line x1="0" y1="12" x2="830" y2="12" stroke="url(#dl)" stroke-width="0.75"/>
-  <circle cx="415" cy="12" r="4" fill="#a855f7" opacity="0.25" class="pd" filter="url(#fg2)"/>
-  <circle cx="415" cy="12" r="2" fill="#c084fc"/>
+  <line x1="0" y1="8" x2="830" y2="8" stroke="#21262d" stroke-width="1"/>
 </svg>
