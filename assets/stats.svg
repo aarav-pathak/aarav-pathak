@@ -41,8 +41,8 @@
   <g transform="translate(502, 16)">
     <rect x="0" y="0" width="148" height="104" class="cell"/>
     <text x="14" y="24" class="lbl">Repositories</text>
-    <text x="14" y="58" class="num">60</text>
-    <text x="14" y="80" class="sub">29 stars earned</text>
+    <text x="14" y="58" class="num">51</text>
+    <text x="14" y="80" class="sub">28 stars earned</text>
   </g>
 
   <!-- Col 5: Top Stack -->
@@ -51,18 +51,18 @@
     <text x="14" y="24" class="lbl">Top languages</text>
     <g transform="translate(14, 34)">
       <circle cx="4" cy="6" r="3.5" fill="#00ADD8"/>
-      <text x="12" y="9" class="lang-item">Go <tspan class="lang-pct">57%</tspan></text>
+      <text x="12" y="9" class="lang-item">Go <tspan class="lang-pct">58%</tspan></text>
       
       <circle cx="4" cy="22" r="3.5" fill="#3178c6"/>
-      <text x="12" y="25" class="lang-item">TypeScript <tspan class="lang-pct">24%</tspan></text>
+      <text x="12" y="25" class="lang-item">TypeScript <tspan class="lang-pct">25%</tspan></text>
 
       <circle cx="4" cy="38" r="3.5" fill="#f1e05a"/>
-      <text x="12" y="41" class="lang-item">JavaScript <tspan class="lang-pct">13%</tspan></text>
+      <text x="12" y="41" class="lang-item">JavaScript <tspan class="lang-pct">12%</tspan></text>
     </g>
 
     <!-- Language Proportion Bar -->
-    <rect x="14" y="86" width="66" height="4" rx="2" fill="#00ADD8"/>
-    <rect x="80" y="86" width="28" height="4" fill="#3178c6"/>
-    <rect x="108" y="86" width="24" height="4" rx="2" fill="#f1e05a"/>
+    <rect x="14" y="86" width="68" height="4" rx="2" fill="#00ADD8"/>
+    <rect x="82" y="86" width="28" height="4" fill="#3178c6"/>
+    <rect x="110" y="86" width="22" height="4" rx="2" fill="#f1e05a"/>
   </g>
 </svg>
