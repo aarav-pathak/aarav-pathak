@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aarav Pathak — Profile Preview</title>
+  <title>Aarav Pathak — Glassmorphic Profile Preview</title>
   <style>
     * {
       box-sizing: border-box;
@@ -11,22 +11,33 @@
       padding: 0;
     }
     body {
-      background-color: #010409;
+      background-color: #07090e;
+      background-image: 
+        radial-gradient(circle at 18% 12%, rgba(56, 139, 253, 0.07) 0%, transparent 45%),
+        radial-gradient(circle at 82% 45%, rgba(63, 185, 80, 0.05) 0%, transparent 45%),
+        radial-gradient(circle at 50% 85%, rgba(139, 148, 158, 0.05) 0%, transparent 50%);
       color: #e6edf3;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
       font-size: 14px;
       line-height: 1.5;
-      padding: 40px 20px;
+      min-height: 100vh;
+      padding: 48px 20px;
       display: flex;
       justify-content: center;
+      align-items: flex-start;
     }
-    .container {
+    .glass-container {
       width: 100%;
-      max-width: 896px;
-      background-color: #0d1117;
-      border: 1px solid #30363d;
-      border-radius: 6px;
-      padding: 32px;
+      max-width: 900px;
+      background: rgba(13, 17, 23, 0.75);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border: 1px solid rgba(255, 255, 255, 0.10);
+      border-radius: 12px;
+      box-shadow: 
+        0 24px 64px rgba(0, 0, 0, 0.55),
+        inset 0 1px 0 rgba(255, 255, 255, 0.12);
+      padding: 36px 32px;
     }
     .profile-wrap {
       width: 100%;
@@ -34,6 +45,15 @@
       flex-direction: column;
       align-items: center;
       gap: 16px;
+    }
+    .glass-card {
+      transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1), filter 0.25s ease;
+      display: block;
+      border-radius: 8px;
+    }
+    .glass-card:hover {
+      transform: translateY(-2.5px);
+      filter: brightness(1.05);
     }
     img {
       max-width: 100%;
@@ -43,7 +63,7 @@
     table {
       width: 100%;
       border-collapse: collapse;
-      margin: 8px 0;
+      margin: 4px 0;
     }
     td {
       padding: 6px;
@@ -58,22 +78,28 @@
       margin-top: 12px;
     }
     .badges-row a {
-      transition: opacity 0.15s ease;
+      transition: transform 0.2s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.2s ease;
+      display: inline-block;
     }
     .badges-row a:hover {
-      opacity: 0.8;
+      transform: translateY(-2px);
+      opacity: 0.85;
     }
   </style>
 </head>
 <body>
-  <div class="container">
+  <div class="glass-container">
     <div class="profile-wrap">
       <!-- Header -->
-      <img src="assets/header.svg" alt="Aarav Pathak" width="830"/>
+      <div class="glass-card">
+        <img src="assets/header.svg" alt="Aarav Pathak" width="830"/>
+      </div>
 
       <!-- Current Focus -->
       <img src="assets/section-initiatives.svg" alt="Current Focus" width="830"/>
-      <img src="assets/focus-radar.svg" alt="Current Focus & Initiatives" width="830"/>
+      <div class="glass-card">
+        <img src="assets/focus-radar.svg" alt="Current Focus & Initiatives" width="830"/>
+      </div>
 
       <!-- Selected Work -->
       <img src="assets/section-selected-work.svg" alt="Selected Work" width="830"/>
@@ -81,36 +107,36 @@
       <table width="100%" cellspacing="0" cellpadding="0" border="0">
         <tr>
           <td width="50%" align="left">
-            <a href="https://filterminds.com" target="_blank" rel="noreferrer">
+            <a href="https://filterminds.com" target="_blank" rel="noreferrer" class="glass-card">
               <img src="assets/card-filter-minds.svg" alt="Filter Minds" width="410"/>
             </a>
           </td>
           <td width="50%" align="right">
-            <a href="https://kaizen-mirai.vercel.app/" target="_blank" rel="noreferrer">
+            <a href="https://kaizen-mirai.vercel.app/" target="_blank" rel="noreferrer" class="glass-card">
               <img src="assets/card-kaizen-mirai.svg" alt="Kaizen Mirai" width="410"/>
             </a>
           </td>
         </tr>
         <tr>
           <td width="50%" align="left">
-            <a href="https://strangery.vercel.app/" target="_blank" rel="noreferrer">
+            <a href="https://strangery.vercel.app/" target="_blank" rel="noreferrer" class="glass-card">
               <img src="assets/card-strangery.svg" alt="Strangery" width="410"/>
             </a>
           </td>
           <td width="50%" align="right">
-            <a href="https://closest.onrender.com" target="_blank" rel="noreferrer">
+            <a href="https://closest.onrender.com" target="_blank" rel="noreferrer" class="glass-card">
               <img src="assets/card-closest.svg" alt="Closest" width="410"/>
             </a>
           </td>
         </tr>
         <tr>
           <td width="50%" align="left">
-            <a href="https://sheeter-nine.vercel.app/" target="_blank" rel="noreferrer">
+            <a href="https://sheeter-nine.vercel.app/" target="_blank" rel="noreferrer" class="glass-card">
               <img src="assets/card-sheeter.svg" alt="Sheeter" width="410"/>
             </a>
           </td>
           <td width="50%" align="right">
-            <a href="https://tasky-seven-delta.vercel.app/auth" target="_blank" rel="noreferrer">
+            <a href="https://tasky-seven-delta.vercel.app/auth" target="_blank" rel="noreferrer" class="glass-card">
               <img src="assets/card-tasky.svg" alt="Tasky" width="410"/>
             </a>
           </td>
@@ -119,18 +145,22 @@
 
       <!-- Engineering & Principles -->
       <img src="assets/section-engineering.svg" alt="Engineering" width="830"/>
-      <img src="assets/skills.svg" alt="Skills" width="830"/>
-      <img src="assets/philosophy.svg" alt="Engineering Principles" width="830"/>
+      <div class="glass-card">
+        <img src="assets/skills.svg" alt="Skills" width="830"/>
+      </div>
+      <div class="glass-card">
+        <img src="assets/philosophy.svg" alt="Engineering Principles" width="830"/>
+      </div>
 
       <!-- GitHub Activity -->
       <img src="assets/section-github.svg" alt="GitHub Activity" width="830"/>
-      <a href="https://github.com/aarav-pathak" target="_blank" rel="noreferrer">
+      <a href="https://github.com/aarav-pathak" target="_blank" rel="noreferrer" class="glass-card">
         <img src="assets/stats.svg" alt="GitHub Activity Overview" width="830"/>
       </a>
 
       <!-- Competitive Programming -->
       <img src="assets/section-competitive.svg" alt="Competitive Programming" width="830"/>
-      <a href="https://codechef.com/users/alive_frog_99" target="_blank" rel="noreferrer">
+      <a href="https://codechef.com/users/alive_frog_99" target="_blank" rel="noreferrer" class="glass-card">
         <img src="assets/competitive.svg" alt="Competitive Programming Stats" width="830"/>
       </a>
 

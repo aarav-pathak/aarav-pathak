@@ -187,22 +187,52 @@ def generate_github_svg(data):
 
     svg_content = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 136" width="830" height="136" fill="none">
   <title>Aarav Pathak — GitHub Activity</title>
+  <defs>
+    <!-- Glassmorphic Gradients -->
+    <linearGradient id="glass-base" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#161b22" stop-opacity="0.88"/>
+      <stop offset="100%" stop-color="#0d1117" stop-opacity="0.96"/>
+    </linearGradient>
+    <linearGradient id="glass-edge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.16"/>
+      <stop offset="45%" stop-color="#ffffff" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.02"/>
+    </linearGradient>
+    <linearGradient id="cell-glass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1f242c" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#12161c" stop-opacity="0.65"/>
+    </linearGradient>
+    <linearGradient id="cell-edge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.03"/>
+    </linearGradient>
+
+    <!-- Subtle Optical Glass Sheen Sweep -->
+    <linearGradient id="sheen" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+      <animate attributeName="x1" values="-100%;100%" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="0%;200%" dur="8s" repeatCount="indefinite"/>
+    </linearGradient>
+  </defs>
+
   <style>
-    .frame {{ fill: #0d1117; stroke: #30363d; stroke-width: 1px; rx: 8px; }}
-    .cell {{ fill: #161b22; stroke: #21262d; stroke-width: 1px; rx: 6px; }}
-    .lbl {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 11px; font-weight: 500; fill: #8b949e; }}
+    .lbl {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 11px; font-weight: 500; fill: #8b949e; letter-spacing: 0.1px; }}
     .num {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 24px; font-weight: 600; fill: #f0f6fc; font-variant-numeric: tabular-nums; }}
     .sub {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 11px; font-weight: 400; fill: #7d8590; }}
     .lang-item {{ font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; font-size: 10.5px; font-weight: 400; fill: #c9d1d9; }}
     .lang-pct {{ font-weight: 500; fill: #8b949e; }}
   </style>
 
-  <!-- Frame -->
-  <rect x="0.5" y="0.5" width="829" height="135" class="frame"/>
+  <!-- Glassmorphic Card Frame -->
+  <rect x="0.5" y="0.5" width="829" height="135" rx="8" fill="url(#glass-base)" stroke="url(#glass-edge)"/>
+  <line x1="8" y1="1" x2="822" y2="1" stroke="url(#sheen)" stroke-width="1.2" stroke-linecap="round"/>
 
   <!-- Col 1: Contributions -->
   <g transform="translate(16, 16)">
-    <rect x="0" y="0" width="148" height="104" class="cell"/>
+    <rect x="0" y="0" width="148" height="104" rx="6" fill="url(#cell-glass)" stroke="url(#cell-edge)"/>
+    <line x1="6" y1="1" x2="142" y2="1" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
     <text x="14" y="24" class="lbl">Contributions</text>
     <text x="14" y="58" class="num">{total_contribs}</text>
     <text x="14" y="80" class="sub">Year-to-date</text>
@@ -210,7 +240,8 @@ def generate_github_svg(data):
 
   <!-- Col 2: Commits -->
   <g transform="translate(178, 16)">
-    <rect x="0" y="0" width="148" height="104" class="cell"/>
+    <rect x="0" y="0" width="148" height="104" rx="6" fill="url(#cell-glass)" stroke="url(#cell-edge)"/>
+    <line x1="6" y1="1" x2="142" y2="1" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
     <text x="14" y="24" class="lbl">Commits</text>
     <text x="14" y="58" class="num">{commits_count}</text>
     <text x="14" y="80" class="sub">Direct code pushes</text>
@@ -218,7 +249,8 @@ def generate_github_svg(data):
 
   <!-- Col 3: Pull Requests -->
   <g transform="translate(340, 16)">
-    <rect x="0" y="0" width="148" height="104" class="cell"/>
+    <rect x="0" y="0" width="148" height="104" rx="6" fill="url(#cell-glass)" stroke="url(#cell-edge)"/>
+    <line x1="6" y1="1" x2="142" y2="1" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
     <text x="14" y="24" class="lbl">Pull requests</text>
     <text x="14" y="58" class="num">{all_prs_count}</text>
     <text x="14" y="80" class="sub">{merged_prs_count} merged</text>
@@ -226,7 +258,8 @@ def generate_github_svg(data):
 
   <!-- Col 4: Repositories -->
   <g transform="translate(502, 16)">
-    <rect x="0" y="0" width="148" height="104" class="cell"/>
+    <rect x="0" y="0" width="148" height="104" rx="6" fill="url(#cell-glass)" stroke="url(#cell-edge)"/>
+    <line x1="6" y1="1" x2="142" y2="1" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
     <text x="14" y="24" class="lbl">Repositories</text>
     <text x="14" y="58" class="num">{repos_count}</text>
     <text x="14" y="80" class="sub">{stars_count} stars earned</text>
@@ -234,7 +267,8 @@ def generate_github_svg(data):
 
   <!-- Col 5: Top Stack -->
   <g transform="translate(664, 16)">
-    <rect x="0" y="0" width="150" height="104" class="cell"/>
+    <rect x="0" y="0" width="150" height="104" rx="6" fill="url(#cell-glass)" stroke="url(#cell-edge)"/>
+    <line x1="6" y1="1" x2="144" y2="1" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
     <text x="14" y="24" class="lbl">Top languages</text>
     <g transform="translate(14, 34)">
       <circle cx="4" cy="6" r="3.5" fill="{l1_col}"/>
@@ -275,19 +309,51 @@ def generate_competitive_svg(cf_data, lc_data):
 
     svg_content = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 112" width="830" height="112" fill="none">
   <title>Aarav Pathak — Competitive Programming Stats</title>
+  <defs>
+    <!-- Glassmorphic Gradients -->
+    <linearGradient id="cp-glass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#161b22" stop-opacity="0.88"/>
+      <stop offset="100%" stop-color="#0d1117" stop-opacity="0.96"/>
+    </linearGradient>
+    <linearGradient id="cp-edge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.16"/>
+      <stop offset="45%" stop-color="#ffffff" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.02"/>
+    </linearGradient>
+    <linearGradient id="cp-cell" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1f242c" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#12161c" stop-opacity="0.65"/>
+    </linearGradient>
+    <linearGradient id="cp-cell-edge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.03"/>
+    </linearGradient>
+
+    <!-- Subtle Optical Glass Sheen Sweep -->
+    <linearGradient id="cp-sheen" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+      <animate attributeName="x1" values="-100%;100%" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="0%;200%" dur="8s" repeatCount="indefinite"/>
+    </linearGradient>
+  </defs>
+
   <style>
-    .frame {{ fill: #0d1117; stroke: #30363d; stroke-width: 1px; rx: 8px; }}
-    .cell {{ fill: #161b22; stroke: #21262d; stroke-width: 1px; rx: 6px; }}
-    .platform {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 11px; font-weight: 500; fill: #8b949e; }}
+    .platform {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 11px; font-weight: 500; fill: #8b949e; letter-spacing: 0.1px; }}
     .rating {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 26px; font-weight: 600; fill: #f0f6fc; font-variant-numeric: tabular-nums; }}
     .detail {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 11.5px; font-weight: 400; fill: #7d8590; }}
+    .beacon {{ fill: #3fb950; }}
   </style>
 
-  <rect x="0.5" y="0.5" width="829" height="111" class="frame"/>
+  <!-- Glass Card Frame -->
+  <rect x="0.5" y="0.5" width="829" height="111" rx="8" fill="url(#cp-glass)" stroke="url(#cp-edge)"/>
+  <line x1="8" y1="1" x2="822" y2="1" stroke="url(#cp-sheen)" stroke-width="1.2" stroke-linecap="round"/>
 
   <!-- Col 1: Codeforces -->
   <g transform="translate(16, 16)">
-    <rect x="0" y="0" width="254" height="80" class="cell"/>
+    <rect x="0" y="0" width="254" height="80" rx="6" fill="url(#cp-cell)" stroke="url(#cp-cell-edge)"/>
+    <line x1="6" y1="1" x2="248" y2="1" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
     <text x="16" y="24" class="platform">Codeforces · orthodoxcoder</text>
     <text x="16" y="54" class="rating">{cf_rating}</text>
     <text x="16" y="71" class="detail">Peak {cf_max} · {cf_solved} problems solved</text>
@@ -295,7 +361,8 @@ def generate_competitive_svg(cf_data, lc_data):
 
   <!-- Col 2: LeetCode -->
   <g transform="translate(288, 16)">
-    <rect x="0" y="0" width="254" height="80" class="cell"/>
+    <rect x="0" y="0" width="254" height="80" rx="6" fill="url(#cp-cell)" stroke="url(#cp-cell-edge)"/>
+    <line x1="6" y1="1" x2="248" y2="1" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
     <text x="16" y="24" class="platform">LeetCode · orthodoxcoder</text>
     <text x="16" y="54" class="rating">{lc_total}</text>
     <text x="16" y="71" class="detail">{lc_easy} easy · {lc_med} medium · {lc_hard} hard</text>
@@ -303,7 +370,8 @@ def generate_competitive_svg(cf_data, lc_data):
 
   <!-- Col 3: CodeChef -->
   <g transform="translate(560, 16)">
-    <rect x="0" y="0" width="254" height="80" class="cell"/>
+    <rect x="0" y="0" width="254" height="80" rx="6" fill="url(#cp-cell)" stroke="url(#cp-cell-edge)"/>
+    <line x1="6" y1="1" x2="248" y2="1" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
     <text x="16" y="24" class="platform">CodeChef · alive_frog_99</text>
     <text x="16" y="54" class="rating">{cc_rating}</text>
     <text x="16" y="71" class="detail">Div 3 (2★) · {cc_contests} contests · {cc_solved} solved</text>
