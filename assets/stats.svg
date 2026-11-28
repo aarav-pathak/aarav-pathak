@@ -47,7 +47,7 @@
     <rect x="0" y="0" width="148" height="104" rx="6" fill="url(#cell-glass)" stroke="url(#cell-edge)"/>
     <line x1="6" y1="1" x2="142" y2="1" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
     <text x="14" y="24" class="lbl">Contributions</text>
-    <text x="14" y="58" class="num">314</text>
+    <text x="14" y="58" class="num">315</text>
     <text x="14" y="80" class="sub">Year-to-date</text>
   </g>
 
@@ -74,7 +74,7 @@
     <rect x="0" y="0" width="148" height="104" rx="6" fill="url(#cell-glass)" stroke="url(#cell-edge)"/>
     <line x1="6" y1="1" x2="142" y2="1" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
     <text x="14" y="24" class="lbl">Repositories</text>
-    <text x="14" y="58" class="num">51</text>
+    <text x="14" y="58" class="num">52</text>
     <text x="14" y="80" class="sub">28 stars earned</text>
   </g>
 
@@ -88,7 +88,7 @@
       <text x="12" y="9" class="lang-item">Go <tspan class="lang-pct">58%</tspan></text>
       
       <circle cx="4" cy="22" r="3.5" fill="#3178c6"/>
-      <text x="12" y="25" class="lang-item">TypeScript <tspan class="lang-pct">25%</tspan></text>
+      <text x="12" y="25" class="lang-item">TypeScript <tspan class="lang-pct">24%</tspan></text>
 
       <circle cx="4" cy="38" r="3.5" fill="#f1e05a"/>
       <text x="12" y="41" class="lang-item">JavaScript <tspan class="lang-pct">12%</tspan></text>
